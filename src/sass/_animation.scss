@@ -1,0 +1,347 @@
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70px);
+        transform: translateY(70px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+@-webkit-keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+@-webkit-keyframes fadeOutScale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOutScale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-70px);
+        transform: translateY(-70px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-150px);
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-150px);
+        transform: translateX(-150px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(150px);
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(150px);
+        transform: translateX(150px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes morphing {
+    0% {
+        border-radius: 40% 60% 50% 50% / 50% 50% 60% 40%;
+    }
+
+    25% {
+        border-radius: 45% 55% 60% 40% / 40% 60% 50% 55%;
+    }
+
+    50% {
+        border-radius: 50% 50% 40% 60% / 60% 40% 50% 50%;
+    }
+
+    75% {
+        border-radius: 55% 45% 50% 50% / 50% 50% 45% 55%;
+    }
+
+    100% {
+        border-radius: 40% 60% 50% 50% / 50% 50% 60% 40%;
+    }
+}
+
+
+
+@keyframes bubble-anim {
+    0% {
+        border-radius: 44% 54% 50% 50% / 50% 50% 54% 44%;
+    }
+
+    25% {
+        border-radius: 46% 52% 54% 48% / 48% 54% 50% 46%;
+    }
+
+    50% {
+        border-radius: 48% 50% 44% 54% / 54% 44% 50% 48%;
+    }
+
+    75% {
+        border-radius: 50% 48% 50% 52% / 52% 50% 46% 54%;
+    }
+
+    100% {
+        border-radius: 44% 54% 50% 50% / 50% 50% 54% 44%;
+    }
+}
+
+.hand__cate--item {
+    animation: morphing 5s infinite;
+}
+
+.banner__img,
+.banner__txt h1,
+.essence__txt h2,
+.essence__brief,
+.essence__img,
+.banner__full--img,
+.people__img,
+.people__img--sub,
+.people__txt h2,
+.people__brief,
+.hand__cate,
+.hand__img,
+.hand__txt h2,
+.hand__brief,
+.leader__txt h2,
+.leader__brief,
+.leader__action,
+.leader__item,
+.leader__gallery--img,
+.banner__full--txt h2,
+.banner__full--brief,
+.customer__txt h2,
+.customer__brief,
+.customer__gallery,
+.contact__form h2,
+.contact__brief,
+.from__group,
+.form__action,
+.contact__img,
+.discover__txt h2,
+.discover__brief,
+.discover__gallery,
+.wheretobuy__txt h2,
+.wheretobuy__brief,
+.wheretobuy__gallery,
+.faq__txt h2,
+.faq__brief,
+.faq__item,
+.faq__main,
+.footer {
+    opacity: 0;
+}
+
+.banner__img.in-view,
+.hand__cate.in-view,
+.leader__gallery--img.in-view,
+.contact__img.in-view,
+.faq__main.in-view,
+.footer.in-view {
+    -webkit-animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.5s forwards;
+} 
+
+.banner__txt h1.in-view,
+.essence__txt h2.in-view,
+.essence__brief.in-view,
+.people__txt h2.in-view,
+.people__brief.in-view,
+.hand__txt h2.in-view,
+.hand__brief.in-view,
+.leader__txt h2.in-view,
+.leader__brief.in-view,
+.leader__action.in-view,
+.banner__full--txt h2.in-view,
+.banner__full--brief.in-view,
+.customer__txt h2.in-view,
+.customer__brief.in-view,
+.contact__form h2.in-view,
+.contact__brief.in-view,
+.discover__txt h2.in-view,
+.discover__brief.in-view,
+.wheretobuy__txt h2.in-view,
+.wheretobuy__brief.in-view,
+.faq__txt h2.in-view,
+.faq__brief.in-view {
+    -webkit-animation: fadeIn 0.8s forwards 0.3s;
+    animation: fadeIn 0.8s forwards 0.3s;
+}
+
+.from__group.in-view,
+.form__action.in-view {
+    -webkit-animation: fadeInUp 1.2s forwards;
+    animation: fadeInUp 1.2s forwards;
+}
+
+.essence__img.in-view,
+.people__img--sub.in-view,
+.hand__img.in-view,
+.customer__gallery.in-view,
+.discover__gallery.in-view,
+.faq__item.in-view {
+    -webkit-animation: fadeInLeft 1.2s forwards;
+    animation: fadeInLeft 1.2s forwards;
+}
+
+.banner__full--img.in-view,
+.leader__item.in-view,
+.wheretobuy__gallery.in-view{
+    -webkit-animation: fadeOutScale 1.2s forwards;
+    animation: fadeOutScale 1.2s forwards;
+}
+
+.people__img.in-view {
+    -webkit-animation: fadeInRight 1.2s forwards;
+    animation: fadeInRight 1.2s forwards;
+}
