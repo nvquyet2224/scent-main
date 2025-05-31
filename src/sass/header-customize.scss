@@ -1,0 +1,55 @@
+@use "function" as f;
+
+.gradient {
+    background: #40491A;
+}
+.utility-bar,
+.header-wrapper {
+    &.gradient {
+        background-color: #40491A;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .header {
+        max-width: 100%;
+        height: 80px;
+        &__menu-item {
+            position: relative;
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            font-weight: 500;
+            color: #fff;
+            text-decoration: none;
+            &::before {
+                content: '';
+                position: relative;
+                display: block;
+                width: 5px;
+                height: 5px;
+                background-color: #fff;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+            }
+        }
+    }
+    .h_spr {
+        display: block;
+        width: 1px;
+        height: 14px;
+        background-color: #B1B1B1;
+        margin: 0 5px;
+    }
+    .header__inline-menu {
+        min-width: f.rem(744);
+        > ul {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+@media screen and (max-width: 989px) {
+}

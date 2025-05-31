@@ -1,0 +1,206 @@
+@use "function" as f;
+
+.section-footer {
+    background-color: #3E2A27;
+
+    p {
+        margin: 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    &--banner {
+        width: 100%;
+        line-height: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &--container {
+        width: 100%;
+        max-width: f.rem(1280);
+        margin: 0 auto;
+    }
+
+    &--top {
+        display: flex;
+        padding-top: f.rem(85);
+        padding-bottom: f.rem(85);
+
+        &__logo {
+            flex: 0 0 f.rem(88);
+            max-width: f.rem(88);
+            height: auto;
+            line-height: 0;
+            margin-right: f.rem(340);
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__menu {
+            a {
+                font-size: f.rem(14);
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        &__form {
+            flex: 0 0 f.rem(522);
+            max-width: f.rem(522);
+            max-width: 500px;
+            margin-left: auto;
+            background-color: #fff;
+            padding: 40px;
+            margin-top: -400px;
+        }
+    }
+
+    &--mid {
+        display: flex;
+        color: #fff;
+        padding:f.rem(50) 0;
+        border-top: 1px solid #fff;
+
+        .company-col,
+        .slogan-col {
+            flex: 0 0 f.rem(305);
+            max-width: f.rem(305);
+            font-size: f.rem(14);
+        }
+
+        .company-col {
+            margin-right: f.rem(120);
+            li {
+                display: flex;
+                gap: 8px;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: relative;
+                    top:0.8vw;
+                    flex: 0 0 5px;
+                    max-width: 5px;
+                    height: 5px;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .company-name {
+            font-size: f.rem(20);
+            margin-bottom: f.rem(20);
+        }
+
+        .company-slogan {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .company-contact {
+            font-size: f.rem(20);
+            margin-top: auto;
+        }
+
+        .social-col {
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            font-size: f.rem(16);
+        }
+    }
+
+    &--bot {
+        display: flex;
+        border-top: 1px solid #fff;
+        padding-top: f.rem(36);
+        padding-bottom: f.rem(90);
+
+        .gov-col {
+            flex: 0 0 f.rem(174);
+            max-width: f.rem(174);
+            margin-right: f.rem(250);
+            line-height: 0;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .privacy-col {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+
+            ul {
+                display: flex;
+                align-items: center;
+                font-size: f.rem(12);
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: f.rem(90);
+                    }
+
+                }
+
+                a {
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &--form {
+        background-color: #fff;
+    }
+
+}
+
+
+@media screen and (max-width: 989px) {
+}

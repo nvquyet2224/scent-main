@@ -1,0 +1,185 @@
+@use "function" as f;
+
+
+.home {
+
+    &-infrastructure {
+        width: 100%;
+        padding: f.rem(120) 0;
+        background-color: #DBE0DF;
+
+        &--container {
+            position: relative;
+            width: 100%;
+            max-width: f.rem(1280);
+            margin: 0 auto;
+        }
+
+        &--box {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            font-size: f.rem(44);
+            line-height: 1.2;
+            color: #0C230B;
+            padding-right: f.rem(100);
+            margin-top: f.rem(36);
+        }
+
+        &--caption {
+            display: block;
+            font-size: f.rem(14);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            //margin-bottom: f.rem(36);
+            padding-bottom: f.rem(22);
+            color: #151C0A;
+            line-height: 1.4;
+        }
+
+        &--video {
+            position: relative;
+            display: block;
+            width: f.rem(305);
+            height: auto;
+            margin-top: auto;
+
+            &::before,
+            &::after {
+                content: '';
+            }
+
+            &::before {
+                display: block;
+                width: 100%;
+                height: auto;
+                padding-top: 127.868852459%;
+            }
+
+            video {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                -webkit-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+
+        &--sub {
+            flex: 0 0 33.828125%;
+            max-width: 33.828125%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--main {
+            flex: 0 0 66.171875%;
+            max-width: 66.171875%;
+        }
+
+        &--list {
+            display: block;
+            width: 100%;
+            height: auto;
+            counter-reset: counter;
+        }
+
+        &--item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: f.rem(60) f.rem(80);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            border-left: 1px solid rgba(0, 0, 0, 0.5);
+            border-right: 1px solid rgba(0, 0, 0, 0.5);
+            counter-increment: counter;
+
+            &::before {
+                content: counter(counter);
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: f.rem(50);
+                height: f.rem(50);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: f.rem(18);
+                font-weight: 300;
+                font-style: italic;
+                font-family: Petrona, serif;
+                border-right: 1px solid rgba(0, 0, 0, 0.5);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                color: #000;
+            }
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9) {
+                &::before {
+                    content: "0" counter(counter);
+                }
+            }
+
+            &:nth-child(3n + 1) {
+                &::before {
+                    background-color: #A9B789;
+                }
+            }
+
+            &:nth-child(3n + 2) {
+                &::before {
+                    background-color: #D9C9B6;
+                }
+            }
+
+            &:nth-child(3n + 3) {
+                &::before {
+                    background-color: #C6A9A9;
+                }
+            }
+
+            &__content {
+                flex-grow: 1;
+                max-width: calc(100% - f.rem(100));
+                padding-right: f.rem(110);
+
+                h3 {
+                    font-size: f.rem(28);
+                    margin-top: 0;
+                    margin-bottom: f.rem(20);
+                }
+
+                p {
+                    font-size: f.rem(16);
+                    margin: 0;
+                }
+            }
+
+            &__icon {
+                width: f.rem(100);
+                line-height: 0;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 989px) {
+}

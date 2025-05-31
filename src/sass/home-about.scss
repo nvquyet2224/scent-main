@@ -1,0 +1,176 @@
+@use "function" as f;
+
+.home {
+
+    &-about {
+        background-color: #F3F0EB;
+        width: 100%;
+        padding: f.rem(114) 0;
+
+        &--container {
+            width: 100%;
+            max-width: f.rem(1280);
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &--sub {
+            flex: 0 0 33.828125%;
+            max-width: 33.828125%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--main {
+            flex: 0 0 66.171875%;
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: f.rem(44);
+            line-height: 1.2;
+            color: #0C230B;
+            padding-right: f.rem(100);
+            margin-top: 0;
+        }
+
+        &--caption {
+            display: block;
+            font-size: f.rem(14);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+            margin-bottom: f.rem(36);
+            padding-bottom: f.rem(22);
+            color: #151C0A;
+            line-height: 1.4;
+        }
+
+        &--content {
+            font-size: f.rem(20);
+            line-height: 1.4;
+            font-weight: 300;
+            color: #0C230B;
+            
+            p {
+                margin-top: 0;
+                margin-bottom: f.rem(20);
+            }
+            
+        }
+
+        &--link {
+            display: flex;
+            width: 100%;
+            padding-top: f.rem(28);
+            margin-bottom: f.rem(80);
+
+            a {
+                position: relative;
+                text-decoration: none;
+                color: #141C0A;
+                font-size: f.rem(14);
+                font-weight: 500;
+                text-transform: uppercase;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #000;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &--img {
+            line-height: 0;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &--video {
+            position: relative;
+            display: block;
+            width: f.rem(305);
+            height: auto;
+            margin-top: auto;
+
+            &::before,
+            &::after {
+                content: '';
+            }
+
+            &::before {
+                display: block;
+                width: 100%;
+                height: auto;
+                padding-top: 100%;
+            }
+
+            video {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                -webkit-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 989px) {
+
+    .home {
+        &-about {
+            padding: f.remSp(60) 0;
+            &--caption {
+                font-size: f.remSp(14);   
+                margin-bottom: f.remSp(30);
+                padding-bottom: f.remSp(16);
+            }
+            h2 {
+                font-size: f.remSp(32);
+            }
+            &--sub,
+            &--main {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            &--video {
+                display: none;
+            }
+            &--content {
+                font-size: f.remSp(16);
+                p {
+                    margin-top: 0;
+                    margin-bottom: f.remSp(18);
+                }
+                
+            }
+            &--link {
+                padding-top: f.remSp(24);
+                margin-bottom: f.remSp(42);
+    
+                a {
+                    font-size: f.remSp(14);
+                }
+            }
+    
+        }
+    }
+}
