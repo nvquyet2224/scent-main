@@ -137,7 +137,10 @@
 
     .home {
         &-about {
-            padding: f.remSp(60) 0;
+            padding: f.remSp(60) 5.333333333%;
+            &--container {
+                max-width: 100%;
+            }
             &--caption {
                 font-size: f.remSp(14);   
                 margin-bottom: f.remSp(30);
@@ -145,6 +148,8 @@
             }
             h2 {
                 font-size: f.remSp(32);
+                padding: 0;
+                margin-bottom: f.remSp(30);
             }
             &--sub,
             &--main {

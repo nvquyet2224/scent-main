@@ -7,6 +7,8 @@
         width: 100%;
         padding: f.rem(120) 0;
         background-color: #F3F0EB;
+        overflow: hidden;
+        position: relative;
 
         &--container {
             position: relative;
@@ -78,6 +80,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: f.rem(20);
+            margin-bottom: f.rem(20);
         }
 
         &--item {
@@ -117,5 +120,73 @@
 }
 
 
+@media screen and (min-width: 990px) {
+    .home {
+        &-popular {
+            &--list {
+                display: grid !important;
+            }
+            .slick-track {
+                -webkit-transform: none !important;
+                transform: none !important;
+                width: 100% !important;
+            }
+            .slick-dots {
+                display: none !important;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 989px) {
+    .home {
+        &-popular {
+            padding: f.remSp(60) 5.333333333%;
+
+            &--container {
+                max-width: 100%;
+            }
+
+            &--caption {
+                font-size: f.remSp(14);
+                margin-bottom: f.remSp(30);
+                padding-bottom: f.remSp(16);
+            }
+
+            h2 {
+                font-size: f.remSp(32);
+            }
+
+            &--link {
+
+                a {
+                    font-size: f.remSp(14);
+                }
+            }
+
+            &--header {
+                margin-bottom: f.remSp(30);
+            }
+
+            &--list {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr);
+                gap: f.remSp(10);
+                margin-bottom: f.remSp(10);
+            }
+
+            &--item {
+                padding: f.remSp(20) f.remSp(10);
+
+                h3 {
+                    font-size: f.remSp(14);
+                }
+
+                &__img {
+                    max-width: f.remSp(80);
+                    margin-bottom: f.remSp(10);
+                }
+            }
+        }
+    }
 }

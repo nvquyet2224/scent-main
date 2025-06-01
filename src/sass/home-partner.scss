@@ -1,5 +1,49 @@
 @use "function" as f;
 
+.marquee {
+	overflow: hidden;
+	position: relative;
+	mask-image: linear-gradient(
+		var(--mask-direction, to right),
+		hsl(0 0% 0% / 0),
+		hsl(0 0% 0% / 1) 10%,
+		hsl(0 0% 0% / 1) 90%,
+		hsl(0 0% 0% / 0)
+	);
+}
+
+.marquee__ctn {
+	display: flex;
+	width: 100%;
+}
+
+.marquee__track {
+	display: flex;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.marquee__ctn {
+		transform: translate3d(0, 0, 0) scale(1);
+		perspective: 1px;
+	}
+}
+
+.marquee__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 200px;
+	margin-inline-end: 3rem;
+
+	img {
+		height: 100px;
+		width: 100%;
+		object-fit: contain;
+		backface-visibility: hidden;
+		filter: brightness(100%);
+	}
+}
 
 .home {
 
@@ -7,6 +51,7 @@
         width: 100%;
         background-color: #F3F0EB;
         padding-bottom: f.rem(120);
+        overflow: hidden;
 
         &--container {
             position: relative;
@@ -41,4 +86,20 @@
 
 
 @media screen and (max-width: 989px) {
+    .home {
+        &-partner{
+            padding: f.remSp(0) 5.333333333% f.remSp(60) 5.333333333%;
+            &--container {
+                max-width: 100%;
+            }
+            &--box {
+                flex-wrap: nowrap;
+            }
+            &__item {
+                flex: 0 0 f.remSp(208);
+                width: f.remSp(208);
+                max-width: f.remSp(208);
+            }
+        }
+    }
 }

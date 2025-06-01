@@ -182,4 +182,70 @@
 
 
 @media screen and (max-width: 989px) {
+    .home {
+        &-infrastructure {
+            padding: f.remSp(60) 0;
+
+            &--container {
+                max-width: 100%;
+            }
+
+            &--caption {
+                width: f.remSp(335);
+                margin: 0 auto;
+                font-size: f.remSp(14);
+                margin-bottom: f.remSp(30);
+                padding-bottom: f.remSp(16);
+            }
+
+            h2 {
+                width: f.remSp(335);
+                margin: 0 auto;
+                font-size: f.remSp(32);
+                margin-bottom: f.remSp(40);
+            }
+
+            &--sub,
+            &--main {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            &--video {
+                display: none;
+            }
+            &--item {
+                &:nth-child(1) {
+                    border-top: 1px solid rgba(0, 0, 0, 0.5);
+                }
+                border-right: none;
+                padding-top: f.remSp(65);
+                padding-bottom: f.remSp(34);
+                padding-left: 5.333333333%;
+                padding-right: 5.333333333%;
+
+                &::before {
+                    width: f.remSp(42);
+                    height: f.remSp(42);
+                    font-size: f.remSp(14);
+                }
+
+                &__content {
+                    max-width: calc(100% - f.remSp(61));
+                    padding-right: f.remSp(15);
+                    h3 {
+                        font-size: f.remSp(24);
+                        margin-bottom: f.remSp(20);
+                    }
+                    p {
+                        font-size: f.remSp(14);
+                    }
+                }
+                &__icon {
+                    flex:  0 0 f.remSp(61);
+                    max-width: f.remSp(61);
+                }
+            }
+        }
+    }
 }

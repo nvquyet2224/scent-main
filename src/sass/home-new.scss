@@ -83,13 +83,28 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
             &--img {
+                position: relative;
                 flex: 0 0 62.706270627%;
                 max-width: 62.706270627%;
                 line-height: 0;
 
-                img {
+                &::before {
+                    content: '';
+                    position: relative;
+                    display: block;
                     width: 100%;
                     height: auto;
+                    padding-top: 68.228105906%;
+                }
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-object-fit: cover;
+                    object-fit: cover;
                 }
             }
 
@@ -100,6 +115,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                padding-left: f.remSp(16);
 
                 h3 {
                     margin: 0;
@@ -121,4 +137,69 @@
 
 
 @media screen and (max-width: 989px) {
+    .home {
+        &-new {
+            padding: f.remSp(60) 5.333333333%;
+
+            &--container {
+                max-width: 100%;
+            }
+
+            &--caption {
+                font-size: f.remSp(14);
+                margin-bottom: f.remSp(30);
+                padding-bottom: f.remSp(16);
+            }
+
+            &--header {
+                flex-wrap: wrap;
+            }
+
+            h2 {
+                font-size: f.remSp(32);
+                padding: 0;
+                margin-bottom: f.remSp(30);
+            }
+
+            &--link {
+                padding-top: 0;
+                margin-bottom: f.remSp(42);
+
+                a {
+                    font-size: f.remSp(14);
+                }
+            }
+
+            &--box {
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: f.remSp(20);
+            }
+
+            &__item {
+                padding-bottom: f.remSp(20);
+
+                &--img {
+                    flex: 0 0 36.71641791%;
+                    max-width: 36.71641791%;
+
+                    &::before {
+                        padding-top: 100%;
+                    }
+                }
+
+                &--txt {
+                    flex: 0 0 63.28358209%;
+                    max-width: 63.28358209%;
+
+                    h3 {
+                        font-size: f.remSp(20);
+                    }
+
+                    .home-new--date {
+                        font-size: f.remSp(14);
+                    }
+                }
+            }
+        }
+    }
 }

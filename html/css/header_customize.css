@@ -1,0 +1,48 @@
+.gradient {
+  background: #40491A;
+}
+
+.utility-bar.gradient,
+.header-wrapper.gradient {
+  background-color: #40491A;
+}
+
+@media screen and (min-width: 1025px) {
+  .header {
+    max-width: 100%;
+    height: 80px;
+  }
+  .header__menu-item {
+    position: relative;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__menu-item::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .h_spr {
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: #B1B1B1;
+    margin: 0 5px;
+  }
+  .header__inline-menu {
+    min-width: 51.6666666667vw;
+  }
+  .header__inline-menu > ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

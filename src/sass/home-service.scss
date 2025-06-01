@@ -185,8 +185,11 @@
 @media screen and (max-width: 989px) {
     .home {
         &-service {
-            padding: f.remSp(60) 0;
+            padding: f.remSp(60) 5.333333333%;
 
+            &--container {
+                max-width: 100%;
+            }
             &--caption {
                 font-size: f.remSp(14);
                 margin-bottom: f.remSp(30);

@@ -32,3 +32,29 @@
         </div>
     </div>
 </section>
+
+
+<script>
+    window.onload = function () {
+        $('.home-practice--box').slick({
+            dots: false,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    }
+</script>

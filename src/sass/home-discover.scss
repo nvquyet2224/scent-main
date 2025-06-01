@@ -87,4 +87,33 @@
 
 
 @media screen and (max-width: 989px) {
+    .home {
+        &-discover {
+            &--container {
+                max-width: 100%;
+            }
+            &--img,
+            &--txt {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            &--txt {
+                padding: f.remSp(40) 5.333333333%;
+                h2{
+                    font-size: f.remSp(32);
+                    margin-bottom: f.remSp(30);
+                }
+                p{
+                    font-size: f.remSp(16);
+                }
+            }
+            &--link {
+                padding-top: f.remSp(24);
+                a {
+                    font-size: f.remSp(14);
+                }
+            }
+        }
+       
+    }
 }

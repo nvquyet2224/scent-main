@@ -84,7 +84,7 @@
     &--mid {
         display: flex;
         color: #fff;
-        padding:f.rem(50) 0;
+        padding: f.rem(50) 0;
         border-top: 1px solid #fff;
 
         .company-col,
@@ -96,6 +96,7 @@
 
         .company-col {
             margin-right: f.rem(120);
+
             li {
                 display: flex;
                 gap: 8px;
@@ -104,7 +105,7 @@
                     content: '';
                     display: block;
                     position: relative;
-                    top:0.8vw;
+                    top: 0.8vw;
                     flex: 0 0 5px;
                     max-width: 5px;
                     height: 5px;
@@ -203,4 +204,130 @@
 
 
 @media screen and (max-width: 989px) {
+    .section-footer {
+
+        &--container {
+            max-width: 100%;
+        }
+
+        &--top {
+            flex-wrap: wrap;
+            padding: 0;
+
+            &__logo {
+                order: 2;
+                padding: f.remSp(60) 5.333333333% f.remSp(0) 5.333333333%;
+                width: 100%;
+
+                img {
+                    width: f.remSp(88);
+                    height: auto;
+                }
+            }
+
+            &__menu {
+                flex: 0 0 100%;
+                max-width: 100%;
+                order: 3;
+                padding: f.remSp(42) 5.333333333%;
+
+                a {
+                    font-size: f.remSp(14);
+                    gap: 12px;
+                }
+            }
+
+            &__form {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: f.remSp(60) 5.333333333%;
+                margin: 0;
+                order: 1;
+            }
+
+        }
+
+        &--mid {
+            flex-wrap: wrap;
+            padding: 0 5.333333333%;
+            padding-bottom: f.remSp(36);
+            border: none;
+
+            .company-col,
+            .slogan-col,
+            .social-col {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .company-col,
+            .slogan-col {
+                font-size: f.remSp(14);
+            }
+
+            .company-col {
+                padding-top: f.remSp(36);
+                padding-bottom: f.remSp(36);
+                border-top: 1px solid #fff;
+            }
+
+            .company-name {
+                font-size: f.remSp(20);
+                margin-bottom: f.remSp(26);
+            }
+
+            .slogan-col {
+                padding-bottom: f.remSp(36);
+            }
+
+            .company-contact {
+                font-size: f.remSp(20);
+                margin-top: f.remSp(20);
+
+            }
+
+            .social-col {
+                font-size: f.remSp(16);
+                display: flex;
+                flex-direction: row;
+                column-gap: f.remSp(16);
+            }
+        }
+
+        &--bot {
+            flex-wrap: wrap;
+            border: none;
+            padding: 0 5.333333333%;
+            padding-bottom: f.remSp(60);
+
+            .gov-col {
+                border-top: 1px solid #fff;
+                padding: f.remSp(36) 0;
+
+                img {
+                    width: f.remSp(174);
+                }
+            }
+
+            .gov-col,
+            .privacy-col {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .privacy-col {
+                
+
+                ul {
+                    flex-direction: column;
+                    font-size: f.remSp(12);
+                    row-gap: f.remSp(20);
+                    li {
+                        width: 100%;
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -5,7 +5,7 @@
         <div class="home-popular--header">
             <h2>Popular Scent</h2>
             <div class="home-popular--link">
-                <a href="">Xem tất cà sản phẩm</a>
+                <a href="#">Xem tất cả</a>
             </div>
         </div>
 
@@ -51,6 +51,8 @@
                         <h3>Tinh dầu Sả Chanh - Lemongrass</h3>
                     </div>
                 </div>
+            </div>
+            <div class="home-popular--list">
                 <div class="home-popular--item">
                     <div class="home-popular--item__img">
                         <img width="360" height="360"
@@ -96,3 +98,29 @@
     </div>
 
 </section>
+
+
+<script>
+    $(document).ready(function () {
+        $('.home-popular--box').slick({
+            dots: true,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            arrows: false,
+            // responsive: [
+            //     {
+            //         breakpoint: 768,
+            //         settings: {
+            //             slidesToShow: 1,
+            //             slidesToScroll: 1
+            //         }
+            //     }
+
+            // ]
+        });
+    });
+</script>
