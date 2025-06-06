@@ -1,6 +1,6 @@
 .home-infrastructure {
   width: 100%;
-  padding: 8.3333333333vw 0;
+  padding: 7.9166666667vw 0;
   background-color: #DBE0DF;
 }
 .home-infrastructure--container {
@@ -15,19 +15,11 @@
   flex-wrap: wrap;
 }
 .home-infrastructure h2 {
-  font-size: 3.0555555556vw;
-  line-height: 1.2;
-  color: #0C230B;
+  margin-top: 2.0833333333vw;
   padding-right: 6.9444444444vw;
-  margin-top: 2.5vw;
 }
 .home-infrastructure--caption {
-  display: block;
-  font-size: 0.9722222222vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  padding-bottom: 1.5277777778vw;
-  color: #151C0A;
-  line-height: 1.4;
+  margin: 0;
 }
 .home-infrastructure--video {
   position: relative;
@@ -93,7 +85,9 @@
   font-size: 1.25vw;
   font-weight: 300;
   font-style: italic;
-  font-family: Petrona, serif;
+  font-family: "Petrona";
+  font-weight: 300;
+  font-style: italic;
   border-right: 1px solid rgba(0, 0, 0, 0.5);
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   color: #000;
@@ -113,15 +107,21 @@
 .home-infrastructure--item__content {
   flex-grow: 1;
   max-width: calc(100% - 6.9444444444vw);
-  padding-right: 7.6388888889vw;
+  padding-right: 5.5555555556vw;
 }
 .home-infrastructure--item__content h3 {
+  font-family: "Petrona";
+  font-weight: 400;
   font-size: 1.9444444444vw;
   margin-top: 0;
-  margin-bottom: 1.3888888889vw;
+  margin-bottom: 1.6666666667vw;
 }
 .home-infrastructure--item__content p {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
   font-size: 1.1111111111vw;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.6;
   margin: 0;
 }
 .home-infrastructure--item__icon {

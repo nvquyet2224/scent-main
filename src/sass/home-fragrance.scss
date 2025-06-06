@@ -12,57 +12,17 @@
 
         &--box {
             position: absolute;
-            left: f.rem(78);
-            bottom: f.rem(106);
+            left: f.rem(80);
+            bottom: f.rem(110);
             width: f.rem(416);
             z-index: 1;
         }
 
         h2 {
-            font-size: f.rem(44);
-            line-height: 1.2;
-            color: #fff;
-            padding-right: f.rem(100);
-            margin-top: 0;
+            margin-bottom: f.rem(12);
         }
-
-        &--content {
-            font-size: f.rem(20);
-            line-height: 1.4;
-            font-weight: 300;
-            color: rgba(255,255,255,0.8);
-
-            p {
-                margin-top: 0;
-                margin-bottom: f.rem(20);
-            }
-        }
-
-        &--link {
-            display: flex;
-            width: 100%;
-            padding-top: f.rem(28);
-
-            a {
-                position: relative;
-                text-decoration: none;
-                color: #fff;
-                font-size: f.rem(14);
-                font-weight: 700;
-                text-transform: uppercase;
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 5px;
-                    height: 5px;
-                    background-color: #fff;
-                    -webkit-border-radius: 50%;
-                    border-radius: 50%;
-                }
-            }
+        .dot-link {
+            padding-top: f.rem(30);
         }
 
         &--video {
@@ -110,12 +70,12 @@
     .home {
         &-fragrance {
             &--caption {
-                font-size: f.remSp(14);   
-                margin-bottom: f.remSp(30);
-                padding-bottom: f.remSp(16);
+                // font-size: f.remSp(14);   
+                // margin-bottom: f.remSp(30);
+                // padding-bottom: f.remSp(16);
             }
             h2 {
-                font-size: f.remSp(32);
+                //font-size: f.remSp(32);
             }
             &--box {
                 width: 100%;
@@ -124,19 +84,19 @@
                 bottom: f.remSp(40);
             }
             &--content {
-                font-size: f.remSp(16);
-                p {
-                    margin-top: 0;
-                    margin-bottom: f.remSp(18);
-                }
+                // font-size: f.remSp(16);
+                // p {
+                //     margin-top: 0;
+                //     margin-bottom: f.remSp(18);
+                // }
                 
             }
             &--link {
-                padding-top: f.remSp(24);
+                // padding-top: f.remSp(24);
     
-                a {
-                    font-size: f.remSp(14);
-                }
+                // a {
+                //     font-size: f.remSp(14);
+                // }
             }
             &--video {
                 &::before {

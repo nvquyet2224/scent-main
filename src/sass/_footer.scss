@@ -68,6 +68,20 @@
 
 }
 
+.form__input {
+  width: 100%;
+  height: f.rem(38);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  color: #000;
+  font-size: f.rem(16);
+
+  &::placeholder {
+    color: #BEBEBE;
+  }
+
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -107,9 +121,11 @@
 
       li {
         margin-bottom: f.rem(4);
+
         a {
           -webkit-transition: color 0.3s ease-in-out;
           transition: color 0.3s ease-in-out;
+
           &:hover {
             color: #fff;
           }
@@ -120,10 +136,12 @@
     &__nav {
       li {
         margin-bottom: f.rem(8);
+
         a {
           font-size: f.rem(22);
           -webkit-transition: color 0.3s ease-in-out;
           transition: color 0.3s ease-in-out;
+
           &:hover {
             color: #fff;
           }
@@ -139,6 +157,7 @@
         max-width: f.rem(36);
         -webkit-transition: transform 0.3s ease-in-out;
         transition: transform 0.3s ease-in-out;
+
         &:hover {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -162,14 +181,17 @@
     &__col {
       flex: 0 0 100%;
       max-width: 100%;
+
       &:nth-child(2),
       &:nth-child(3) {
         flex: 0 0 50%;
         max-width: 50%;
       }
+
       &:nth-child(2) {
         padding-right: f.rem(10);
       }
+
       &:nth-child(3) {
         padding-left: f.rem(10);
       }

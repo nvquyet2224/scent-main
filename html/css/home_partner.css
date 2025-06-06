@@ -38,14 +38,12 @@
 .home-partner {
   width: 100%;
   background-color: #F3F0EB;
-  padding-bottom: 8.3333333333vw;
+  padding-bottom: 6.25vw;
   overflow: hidden;
 }
 .home-partner--container {
   position: relative;
   width: 100%;
-  max-width: 88.8888888889vw;
-  margin: 0 auto;
 }
 .home-partner--box {
   width: 100%;

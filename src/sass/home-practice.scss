@@ -6,7 +6,7 @@
     &-practice {
         width: 100%;
         background-color: #F3F0EB;
-        padding: f.rem(120) 0;
+        padding: f.rem(88) 0;
         overflow: hidden;
         position: relative;
 
@@ -26,40 +26,13 @@
 
 
         h2 {
-            font-size: f.rem(44);
-            line-height: 1.2;
-            color: #0C230B;
-            padding-right: f.rem(100);
-            margin-top: 0;
+            margin-bottom: f.rem(40);
         }
 
         &--link {
-            display: flex;
-            width: 100%;
-            padding-top: f.rem(28);
-
-            a {
-                position: relative;
-                text-decoration: none;
-                color: #141C0A;
-                font-size: f.rem(14);
-                font-weight: 500;
-                text-transform: uppercase;
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 5px;
-                    height: 5px;
-                    background-color: #000;
-                    -webkit-border-radius: 50%;
-                    border-radius: 50%;
-                }
-            }
+            padding-top: f.rem(30);
         }
+
 
         &__item {
             position: relative;
@@ -101,7 +74,8 @@
 
             h3 {
                 font-size: f.rem(28);
-                color: #0C230B;
+                font-family: 'Petrona';
+                font-weight: 500;
                 line-height: 1.4;
                 margin: 0;
                 padding-right: f.rem(140);
@@ -120,6 +94,40 @@
         }
 
     }
+}
+
+@media screen and (min-width: 1025px) {
+    .home {
+        &-practice {
+            &--img {
+                img {
+                    -webkit-transition: filter 0.3s ease-in-out;
+                    transition: filter 0.3s ease-in-out;
+                    -webkit-filter: grayscale(1);
+                    filter: grayscale(1);
+                }
+            }
+
+            &__item {
+                box-shadow: 0px 10px 46.9px 0px rgba(97, 124, 82, 0);
+                -webkit-transition: box-shadow 0.3s ease-in-out;
+                transition: box-shadow 0.3s ease-in-out;
+
+                &:hover {
+                    box-shadow: 0px 10px 46.9px 0px rgba(97, 124, 82, 0.3098039216);
+                    .home-practice--img {
+                        img {
+                            -webkit-filter: grayscale(0);
+                            filter: grayscale(0);
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
 }
 
 @media screen and (min-width: 990px) {

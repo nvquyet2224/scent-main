@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding-bottom: f.rem(80);
+            padding-bottom: f.rem(84);
         }
 
         &--slogan {
@@ -43,29 +43,25 @@
                 text-transform: uppercase;
                 line-height: 1.1;
                 display: flex;
-                align-items: center;
-                letter-spacing: -0.6vw;
+                letter-spacing: -0.05em;
 
                 &:nth-child(1) {
-                    padding-left: f.rem(98);
-                    column-gap: f.rem(25);
-                }
-
-                &:nth-child(2) {
-                    padding-left: f.rem(0);
-                }
-
-                &:nth-child(3),
-                &:nth-child(4) {
-                    justify-content: flex-end;
+                    -webkit-transform: translateX(f.rem(98));
+                    transform: translateX(f.rem(98));
+                    column-gap: f.rem(30);
                 }
 
                 &:nth-child(3) {
-                    column-gap: f.rem(34);
+                    column-gap: f.rem(30);
+                    -webkit-transform: translateX(f.rem(188));
+                    transform: translateX(f.rem(188));
                 }
 
                 &--icon {
-                    width: f.rem(31);
+                    position: relative;
+                    top:f.rem(22);
+                    flex: 0 0 f.rem(31);
+                    max-width: f.rem(31);
                     height: auto;
                     line-height: 0;
 
@@ -76,11 +72,19 @@
                 }
 
                 span {
-                    position: relative;
-                    top: f.rem(-16);
-                    font-size: f.rem(12);
+                    font-family: 'Helvetica Neue';
+                    font-weight: 400;
                     line-height: 1.4;
+                    font-size: f.rem(12);
                     letter-spacing: normal;
+                    position: relative;
+                    top: f.rem(16);
+                    align-self: flex-start;
+                    height: auto;
+                    // top: f.rem(-16);
+                    // font-size: f.rem(12);
+                    // line-height: 1.4;
+                    // letter-spacing: normal;
                 }
             }
         }

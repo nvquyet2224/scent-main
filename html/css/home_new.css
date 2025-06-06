@@ -1,7 +1,7 @@
 .home-new {
   width: 100%;
   background-color: #F3F0EB;
-  padding-bottom: 8.3333333333vw;
+  padding-bottom: 6.25vw;
 }
 .home-new--container {
   position: relative;
@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4.3055555556vw;
-  row-gap: 1.3888888889vw;
+  row-gap: 2.0833333333vw;
 }
 .home-new--header {
   display: flex;
@@ -22,43 +22,8 @@
   align-items: center;
   margin-bottom: 3.0555555556vw;
 }
-.home-new h2 {
-  font-size: 3.0555555556vw;
-  line-height: 1.2;
-  color: #0C230B;
-  margin: 0;
-}
-.home-new--caption {
-  display: block;
-  font-size: 0.9722222222vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  margin-bottom: 2.5vw;
-  padding-bottom: 1.5277777778vw;
-  color: #151C0A;
-  line-height: 1.4;
-}
 .home-new--link {
-  display: inline-flex;
-}
-.home-new--link a {
-  position: relative;
-  text-decoration: none;
-  color: #141C0A;
-  font-size: 1.1111111111vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.home-new--link a::before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: #000;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  width: auto;
 }
 .home-new__item {
   width: 100%;
@@ -72,6 +37,7 @@
   flex: 0 0 62.706270627%;
   max-width: 62.706270627%;
   line-height: 0;
+  overflow: hidden;
 }
 .home-new__item--img::before {
   content: "";
@@ -91,25 +57,39 @@
   object-fit: cover;
 }
 .home-new__item--txt {
-  padding: 1.3888888889vw 1.8055555556vw;
+  padding: 1.0416666667vw 0 1.0416666667vw 1.9444444444vw;
   flex: 0 0 37.293729373%;
   max-width: 37.293729373%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 4.2666666667vw;
 }
 .home-new__item--txt h3 {
-  margin: 0;
-  font-size: 1.5277777778vw;
+  font-family: "Petrona";
   font-weight: 500;
+  margin: 0;
+  color: #000;
+  line-height: 1.3;
+  font-size: 1.5277777778vw;
 }
 .home-new__item--txt .home-new--date {
   color: #0C230B;
-  font-weight: 400;
+  line-height: 1.3;
   font-size: 0.9722222222vw;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
 }
 
+@media screen and (min-width: 1025px) {
+  .home-new__item--img img {
+    -webkit-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+  .home-new__item:hover .home-new__item--img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
 @media screen and (max-width: 989px) {
   .home-new {
     padding: 16vw 5.333333333%;

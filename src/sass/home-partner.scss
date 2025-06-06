@@ -50,14 +50,12 @@
     &-partner {
         width: 100%;
         background-color: #F3F0EB;
-        padding-bottom: f.rem(120);
+        padding-bottom: f.rem(90);
         overflow: hidden;
 
         &--container {
             position: relative;
             width: 100%;
-            max-width: f.rem(1280);
-            margin: 0 auto;
         }
 
         &--box {

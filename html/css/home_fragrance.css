@@ -7,52 +7,16 @@
 }
 .home-fragrance--box {
   position: absolute;
-  left: 5.4166666667vw;
-  bottom: 7.3611111111vw;
+  left: 5.5555555556vw;
+  bottom: 7.6388888889vw;
   width: 28.8888888889vw;
   z-index: 1;
 }
 .home-fragrance h2 {
-  font-size: 3.0555555556vw;
-  line-height: 1.2;
-  color: #fff;
-  padding-right: 6.9444444444vw;
-  margin-top: 0;
+  margin-bottom: 0.8333333333vw;
 }
-.home-fragrance--content {
-  font-size: 1.3888888889vw;
-  line-height: 1.4;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
-}
-.home-fragrance--content p {
-  margin-top: 0;
-  margin-bottom: 1.3888888889vw;
-}
-.home-fragrance--link {
-  display: flex;
-  width: 100%;
-  padding-top: 1.9444444444vw;
-}
-.home-fragrance--link a {
-  position: relative;
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.9722222222vw;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.home-fragrance--link a::before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: #fff;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+.home-fragrance .dot-link {
+  padding-top: 2.0833333333vw;
 }
 .home-fragrance--video {
   position: relative;
@@ -88,32 +52,11 @@
 }
 
 @media screen and (max-width: 989px) {
-  .home-fragrance--caption {
-    font-size: 3.7333333333vw;
-    margin-bottom: 8vw;
-    padding-bottom: 4.2666666667vw;
-  }
-  .home-fragrance h2 {
-    font-size: 8.5333333333vw;
-  }
   .home-fragrance--box {
     width: 100%;
     padding: 0 5.333333333%;
     left: 0;
     bottom: 10.6666666667vw;
-  }
-  .home-fragrance--content {
-    font-size: 4.2666666667vw;
-  }
-  .home-fragrance--content p {
-    margin-top: 0;
-    margin-bottom: 4.8vw;
-  }
-  .home-fragrance--link {
-    padding-top: 6.4vw;
-  }
-  .home-fragrance--link a {
-    font-size: 3.7333333333vw;
   }
   .home-fragrance--video::before {
     padding-top: 160%;

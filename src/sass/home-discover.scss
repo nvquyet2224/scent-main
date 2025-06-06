@@ -36,49 +36,21 @@
             padding: f.rem(80) f.rem(40);
 
             h2 {
-                font-size: f.rem(44);
-                line-height: 1.2;
-                color: #0C230B;
+                // font-size: f.rem(44);
+                // line-height: 1.2;
+                // color: #0C230B;
                 padding-right: f.rem(100);
-                margin-top: 0;
-                margin-bottom: f.rem(36);
+                margin-bottom: f.rem(25);
             }
 
             p {
-                font-size: f.rem(20);
-                color: #0C230BCC;
                 font-weight: 300;
-                line-height: 1.4;
-                margin: 0;
+                color: #0C230BCC;
             }
         }
 
         &--link {
-            display: flex;
-            width: 100%;
             padding-top: f.rem(28);
-
-            a {
-                position: relative;
-                text-decoration: none;
-                color: #141C0A;
-                font-size: f.rem(14);
-                font-weight: 700;
-                text-transform: uppercase;
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 5px;
-                    height: 5px;
-                    background-color: #000;
-                    -webkit-border-radius: 50%;
-                    border-radius: 50%;
-                }
-            }
         }
 
 

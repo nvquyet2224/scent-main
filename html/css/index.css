@@ -1,1 +1,134 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeue.woff2) format("woff2"), url(../fonts/HelveticaNeue.woff) format("woff"), url(../fonts/HelveticaNeue.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeue-Medium.woff2) format("woff2"), url(../fonts/HelveticaNeue-Medium.woff) format("woff"), url(../fonts/HelveticaNeue-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeue-Bold.woff2) format("woff2"), url(../fonts/HelveticaNeue-Bold.woff) format("woff"), url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeue-Light.woff2) format("woff2"), url(../fonts/HelveticaNeue-Light.woff) format("woff"), url(../fonts/HelveticaNeue-Light.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Petrona";
+  src: url(../fonts/Petrona-Medium.woff2) format("woff2"), url(../fonts/Petrona-Medium.woff) format("woff"), url(../fonts/Petrona-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Petrona";
+  src: url(../fonts/Petrona-Regular.woff2) format("woff2"), url(../fonts/Petrona-Regular.woff) format("woff"), url(../fonts/Petrona-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Petrona";
+  src: url(../fonts/Petrona-LightItalic.woff2) format("woff2"), url(../fonts/Petrona-LightItalic.woff) format("woff"), url(../fonts/Petrona-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+body {
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.4;
+  color: #0C230B;
+}
 
+.caption {
+  display: block;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  color: #151C0A;
+  line-height: 1.4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.5277777778vw;
+  margin-bottom: 3.1944444444vw;
+  font-size: 0.9722222222vw;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Petrona";
+  font-weight: 500;
+  line-height: 1.2;
+  color: #0C230B;
+  font-size: 3.0555555556vw;
+  margin: 0;
+}
+
+.content.color-white {
+  color: rgba(255, 255, 255, 0.8);
+}
+.content p {
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 0.9722222222vw;
+}
+
+.dot-link {
+  display: flex;
+  width: 100%;
+}
+.dot-link a {
+  position: relative;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #141C0A;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5555555556vw;
+}
+.dot-link a::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #141C0A;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.dot-link.color-white a {
+  color: #fff;
+}
+.dot-link.color-white a::before {
+  background-color: #fff;
+}
+
+.color-white {
+  color: #fff;
+}
+
+@media screen and (min-width: 1025px) {
+  .dot-link a {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .dot-link a:hover {
+    text-decoration: underline;
+  }
+}

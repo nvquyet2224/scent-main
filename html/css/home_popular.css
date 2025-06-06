@@ -1,6 +1,6 @@
 .home-popular {
   width: 100%;
-  padding: 8.3333333333vw 0;
+  padding: 7.9166666667vw 0;
   background-color: #F3F0EB;
   overflow: hidden;
   position: relative;
@@ -22,43 +22,8 @@
   align-items: center;
   margin-bottom: 3.0555555556vw;
 }
-.home-popular h2 {
-  font-size: 3.0555555556vw;
-  line-height: 1.2;
-  color: #0C230B;
-  margin: 0;
-}
-.home-popular--caption {
-  display: block;
-  font-size: 0.9722222222vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  margin-bottom: 2.5vw;
-  padding-bottom: 1.5277777778vw;
-  color: #151C0A;
-  line-height: 1.4;
-}
 .home-popular--link {
-  display: inline-flex;
-}
-.home-popular--link a {
-  position: relative;
-  text-decoration: none;
-  color: #141C0A;
-  font-size: 1.1111111111vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.home-popular--link a::before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: #000;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  width: auto;
 }
 .home-popular--list {
   width: 100%;

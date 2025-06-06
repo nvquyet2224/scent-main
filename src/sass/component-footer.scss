@@ -52,11 +52,20 @@
         }
 
         &__menu {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: f.rem(20);
+                }
+            }
+
             a {
                 font-size: f.rem(14);
                 display: inline-flex;
                 align-items: center;
-                gap: 8px;
+                gap: f.rem(8);
+                text-decoration: none;
+                font-family: 'Helvetica Neue';
+                font-weight: 500;
 
                 &::before {
                     content: '';
@@ -73,10 +82,10 @@
         &__form {
             flex: 0 0 f.rem(522);
             max-width: f.rem(522);
-            max-width: 500px;
+            //max-width: 500px;
             margin-left: auto;
             background-color: #fff;
-            padding: 40px;
+            padding: f.rem(46) f.rem(38);
             margin-top: -400px;
         }
     }
@@ -92,6 +101,8 @@
             flex: 0 0 f.rem(305);
             max-width: f.rem(305);
             font-size: f.rem(14);
+            font-family: 'Helvetica Neue';
+            font-weight: 400;
         }
 
         .company-col {
@@ -99,7 +110,13 @@
 
             li {
                 display: flex;
-                gap: 8px;
+                gap: f.rem(8);
+                line-height: 1.57;
+                padding-left: f.rem(6);
+
+                &:not(:last-child) {
+                    margin-bottom: f.rem(8);
+                }
 
                 &::before {
                     content: '';
@@ -125,6 +142,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            line-height: 1.57;
         }
 
         .company-contact {
@@ -137,6 +155,10 @@
             display: flex;
             flex-direction: column;
             font-size: f.rem(16);
+            font-family: 'Helvetica Neue';
+            font-weight: 400;
+            text-align: right;
+            line-height: 1.875;
         }
     }
 
@@ -180,7 +202,9 @@
                     text-decoration: none;
                     display: inline-flex;
                     align-items: center;
-                    gap: 8px;
+                    font-family: 'Helvetica Neue';
+                    font-weight: 500;
+                    gap: f.rem(8);
 
                     &::before {
                         content: '';
@@ -198,6 +222,34 @@
 
     &--form {
         background-color: #fff;
+    }
+
+}
+
+.booking {
+    .title {
+        font-size: f.rem(32);
+    }
+    .form__input {
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        width: 100%;
+        height: f.rem(38);
+        border: none;
+        box-shadow: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        color: #000;
+        font-size: f.rem(16);
+        outline: none;
+
+
+        &::placeholder {
+            color: #BEBEBE;
+        }
+
     }
 
 }
@@ -316,12 +368,13 @@
             }
 
             .privacy-col {
-                
+
 
                 ul {
                     flex-direction: column;
                     font-size: f.remSp(12);
                     row-gap: f.remSp(20);
+
                     li {
                         width: 100%;
                         margin: 0 !important;

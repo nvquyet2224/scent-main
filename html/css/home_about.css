@@ -24,56 +24,17 @@
   max-width: 100%;
 }
 .home-about h2 {
-  font-size: 3.0555555556vw;
-  line-height: 1.2;
-  color: #0C230B;
-  padding-right: 6.9444444444vw;
-  margin-top: 0;
+  padding-right: 5.5555555556vw;
 }
 .home-about--caption {
-  display: block;
-  font-size: 0.9722222222vw;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  margin-bottom: 2.5vw;
-  padding-bottom: 1.5277777778vw;
-  color: #151C0A;
-  line-height: 1.4;
+  width: 100%;
 }
 .home-about--content {
-  font-size: 1.3888888889vw;
-  line-height: 1.4;
-  font-weight: 300;
-  color: #0C230B;
-}
-.home-about--content p {
-  margin-top: 0;
-  margin-bottom: 1.3888888889vw;
+  width: 100%;
 }
 .home-about--link {
-  display: flex;
-  width: 100%;
-  padding-top: 1.9444444444vw;
-  margin-bottom: 5.5555555556vw;
-}
-.home-about--link a {
-  position: relative;
-  text-decoration: none;
-  color: #141C0A;
-  font-size: 0.9722222222vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.home-about--link a::before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 5px;
-  background-color: #000;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  padding-top: 2.0833333333vw;
+  padding-bottom: 6.25vw;
 }
 .home-about--img {
   line-height: 0;
@@ -116,35 +77,11 @@
   .home-about--container {
     max-width: 100%;
   }
-  .home-about--caption {
-    font-size: 3.7333333333vw;
-    margin-bottom: 8vw;
-    padding-bottom: 4.2666666667vw;
-  }
-  .home-about h2 {
-    font-size: 8.5333333333vw;
-    padding: 0;
-    margin-bottom: 8vw;
-  }
   .home-about--sub, .home-about--main {
     flex: 0 0 100%;
     max-width: 100%;
   }
   .home-about--video {
     display: none;
-  }
-  .home-about--content {
-    font-size: 4.2666666667vw;
-  }
-  .home-about--content p {
-    margin-top: 0;
-    margin-bottom: 4.8vw;
-  }
-  .home-about--link {
-    padding-top: 6.4vw;
-    margin-bottom: 11.2vw;
-  }
-  .home-about--link a {
-    font-size: 3.7333333333vw;
   }
 }

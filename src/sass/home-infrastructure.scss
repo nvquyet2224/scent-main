@@ -5,7 +5,7 @@
 
     &-infrastructure {
         width: 100%;
-        padding: f.rem(120) 0;
+        padding: f.rem(114) 0;
         background-color: #DBE0DF;
 
         &--container {
@@ -22,21 +22,12 @@
         }
 
         h2 {
-            font-size: f.rem(44);
-            line-height: 1.2;
-            color: #0C230B;
+            margin-top: f.rem(30);
             padding-right: f.rem(100);
-            margin-top: f.rem(36);
         }
 
         &--caption {
-            display: block;
-            font-size: f.rem(14);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-            //margin-bottom: f.rem(36);
-            padding-bottom: f.rem(22);
-            color: #151C0A;
-            line-height: 1.4;
+            margin: 0;
         }
 
         &--video {
@@ -111,7 +102,9 @@
                 font-size: f.rem(18);
                 font-weight: 300;
                 font-style: italic;
-                font-family: Petrona, serif;
+                font-family: 'Petrona';
+                font-weight: 300;
+                font-style: italic;
                 border-right: 1px solid rgba(0, 0, 0, 0.5);
                 border-bottom: 1px solid rgba(0, 0, 0, 0.5);
                 color: #000;
@@ -152,16 +145,22 @@
             &__content {
                 flex-grow: 1;
                 max-width: calc(100% - f.rem(100));
-                padding-right: f.rem(110);
+                padding-right: f.rem(80);
 
                 h3 {
+                    font-family: 'Petrona';
+                    font-weight: 400;
                     font-size: f.rem(28);
                     margin-top: 0;
-                    margin-bottom: f.rem(20);
+                    margin-bottom: f.rem(24);
                 }
 
                 p {
+                    font-family: 'Helvetica Neue';
+                    font-weight: 400;
                     font-size: f.rem(16);
+                    color: rgba(0, 0, 0, 0.6);
+                    line-height: 1.6;
                     margin: 0;
                 }
             }
@@ -214,10 +213,12 @@
             &--video {
                 display: none;
             }
+
             &--item {
                 &:nth-child(1) {
                     border-top: 1px solid rgba(0, 0, 0, 0.5);
                 }
+
                 border-right: none;
                 padding-top: f.remSp(65);
                 padding-bottom: f.remSp(34);
@@ -233,16 +234,19 @@
                 &__content {
                     max-width: calc(100% - f.remSp(61));
                     padding-right: f.remSp(15);
+
                     h3 {
                         font-size: f.remSp(24);
                         margin-bottom: f.remSp(20);
                     }
+
                     p {
                         font-size: f.remSp(14);
                     }
                 }
+
                 &__icon {
-                    flex:  0 0 f.remSp(61);
+                    flex: 0 0 f.remSp(61);
                     max-width: f.remSp(61);
                 }
             }

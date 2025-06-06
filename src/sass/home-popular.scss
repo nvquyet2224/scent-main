@@ -5,7 +5,7 @@
 
     &-popular {
         width: 100%;
-        padding: f.rem(120) 0;
+        padding: f.rem(114) 0;
         background-color: #F3F0EB;
         overflow: hidden;
         position: relative;
@@ -30,49 +30,8 @@
             margin-bottom: f.rem(44);
         }
 
-
-        h2 {
-            font-size: f.rem(44);
-            line-height: 1.2;
-            color: #0C230B;
-            margin: 0;
-        }
-
-        &--caption {
-            display: block;
-            font-size: f.rem(14);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-            margin-bottom: f.rem(36);
-            padding-bottom: f.rem(22);
-            color: #151C0A;
-            line-height: 1.4;
-        }
-
-
         &--link {
-            display: inline-flex;
-
-            a {
-                position: relative;
-                text-decoration: none;
-                color: #141C0A;
-                font-size: f.rem(16);
-                font-weight: 500;
-                text-transform: uppercase;
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 5px;
-                    height: 5px;
-                    background-color: #000;
-                    -webkit-border-radius: 50%;
-                    border-radius: 50%;
-                }
-            }
+            width: auto;
         }
 
         &--list {

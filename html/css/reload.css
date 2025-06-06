@@ -20,16 +20,30 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Kefa";
-  src: url(../fonts/Kefa-Regular.woff2) format("woff2"), url(../fonts/Kefa-Regular.woff) format("woff"), url(../fonts/Kefa-Regular.ttf) format("truetype");
+  font-family: "Helvetica Neue";
+  src: url(../fonts/HelveticaNeue-Light.woff2) format("woff2"), url(../fonts/HelveticaNeue-Light.woff) format("woff"), url(../fonts/HelveticaNeue-Light.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Petrona";
+  src: url(../fonts/Petrona-Medium.woff2) format("woff2"), url(../fonts/Petrona-Medium.woff) format("woff"), url(../fonts/Petrona-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Petrona";
+  src: url(../fonts/Petrona-Regular.woff2) format("woff2"), url(../fonts/Petrona-Regular.woff) format("woff"), url(../fonts/Petrona-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Kefa";
-  src: url(../fonts/Kefa-Bold.woff2) format("woff2"), url(../fonts/Kefa-Bold.woff) format("woff"), url(../fonts/Kefa-Bold.ttf) format("truetype");
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Petrona";
+  src: url(../fonts/Petrona-LightItalic.woff2) format("woff2"), url(../fonts/Petrona-LightItalic.woff) format("woff"), url(../fonts/Petrona-LightItalic.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
   font-display: swap;
 }

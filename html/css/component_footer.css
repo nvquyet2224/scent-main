@@ -41,11 +41,17 @@
   width: 100%;
   height: auto;
 }
+.section-footer--top__menu li:not(:last-child) {
+  margin-bottom: 1.3888888889vw;
+}
 .section-footer--top__menu a {
   font-size: 0.9722222222vw;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5555555556vw;
+  text-decoration: none;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
 }
 .section-footer--top__menu a::before {
   content: "";
@@ -59,10 +65,9 @@
 .section-footer--top__form {
   flex: 0 0 36.25vw;
   max-width: 36.25vw;
-  max-width: 500px;
   margin-left: auto;
   background-color: #fff;
-  padding: 40px;
+  padding: 3.1944444444vw 2.6388888889vw;
   margin-top: -400px;
 }
 .section-footer--mid {
@@ -76,13 +81,20 @@
   flex: 0 0 21.1805555556vw;
   max-width: 21.1805555556vw;
   font-size: 0.9722222222vw;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
 }
 .section-footer--mid .company-col {
   margin-right: 8.3333333333vw;
 }
 .section-footer--mid .company-col li {
   display: flex;
-  gap: 8px;
+  gap: 0.5555555556vw;
+  line-height: 1.57;
+  padding-left: 0.4166666667vw;
+}
+.section-footer--mid .company-col li:not(:last-child) {
+  margin-bottom: 0.5555555556vw;
 }
 .section-footer--mid .company-col li::before {
   content: "";
@@ -104,6 +116,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  line-height: 1.57;
 }
 .section-footer--mid .company-contact {
   font-size: 1.3888888889vw;
@@ -114,6 +127,10 @@
   display: flex;
   flex-direction: column;
   font-size: 1.1111111111vw;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  text-align: right;
+  line-height: 1.875;
 }
 .section-footer--bot {
   display: flex;
@@ -149,7 +166,9 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  gap: 0.5555555556vw;
 }
 .section-footer--bot .privacy-col ul a::before {
   content: "";
@@ -162,6 +181,28 @@
 }
 .section-footer--form {
   background-color: #fff;
+}
+
+.booking .title {
+  font-size: 2.2222222222vw;
+}
+.booking .form__input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  width: 100%;
+  height: 2.6388888889vw;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  color: #000;
+  font-size: 1.1111111111vw;
+  outline: none;
+}
+.booking .form__input::placeholder {
+  color: #BEBEBE;
 }
 
 @media screen and (max-width: 989px) {

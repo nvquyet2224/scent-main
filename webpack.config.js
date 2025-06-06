@@ -140,7 +140,7 @@ module.exports = {
       filename: "index.html",
       preload: preload,
       svg: svg,
-      //header: headerComponent,
+      header: headerComponent,
       footer: footerComponent,
       banner: homeBanner,
       about: homeAbout,
