@@ -126,13 +126,24 @@
 .home-service--item:hover .home-service--item__link {
   opacity: 1;
 }
+
 @media screen and (max-width: 989px) {
+  .home-service {
+    padding: 16vw 5.333333333%;
+  }
   .home-service--container {
     max-width: 100%;
+  }
+  .home-service h2 {
+    margin-bottom: 8vw;
+    padding: 0;
   }
   .home-service--sub, .home-service--main {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .home-service--main__content {
+    width: 100%;
   }
   .home-service--list {
     padding-top: 6.4vw;
@@ -146,6 +157,16 @@
     margin-left: 0 !important;
     margin-top: 0 !important;
   }
+  .home-service--item__content {
+    padding-bottom: 2.6666666667vw;
+  }
+  .home-service--item__content h3 {
+    font-size: 6.4vw;
+    margin-bottom: 2.1333333333vw;
+  }
+  .home-service--item__content p {
+    font-size: 3.7333333333vw;
+  }
   .home-service--item__action {
     height: 26.6666666667vw;
     justify-content: space-between;
@@ -158,5 +179,13 @@
     -webkit-transform: none !important;
     transform: none !important;
     width: 25.8666666667vw;
+  }
+  .home-service--item__link {
+    opacity: 1;
+    font-size: 3.7333333333vw;
+    gap: 3.2vw;
+  }
+  .home-service--item__link img {
+    width: 11.7333333333vw;
   }
 }

@@ -85,6 +85,7 @@ body {
   font-weight: 300;
   line-height: 1.4;
   margin: 0;
+  font-size: 1.3888888889vw;
   margin-bottom: 0.9722222222vw;
 }
 
@@ -102,6 +103,7 @@ body {
   align-items: center;
   text-decoration: none;
   gap: 0.5555555556vw;
+  font-size: 1.1111111111vw;
 }
 .dot-link a::before {
   content: "";
@@ -130,5 +132,47 @@ body {
   }
   .dot-link a:hover {
     text-decoration: underline;
+  }
+}
+@media screen and (min-width: 990px) {
+  .sp {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 989px) {
+  .pc {
+    display: none !important;
+  }
+  .caption {
+    font-size: 3.7333333333vw;
+    padding-bottom: 5.3333333333vw;
+    margin-bottom: 8vw;
+  }
+  .title {
+    font-size: 8.2666666667vw;
+  }
+  .content p {
+    font-size: 4.2666666667vw;
+    margin-bottom: 3.7333333333vw;
+  }
+  .dot-link a {
+    gap: 2.1333333333vw;
+    font-size: 3.7333333333vw;
+  }
+  .slick-dots li {
+    width: 40px !important;
+    height: 2px !important;
+    margin: 0 5px !important;
+  }
+  .slick-dots li button {
+    padding: 0 !important;
+    width: 40px !important;
+    height: 2px !important;
+  }
+  .slick-dots li button::before {
+    content: "" !important;
+    width: 40px !important;
+    height: 2px !important;
+    background-color: #000;
   }
 }

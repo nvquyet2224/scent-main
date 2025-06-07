@@ -120,14 +120,10 @@
     margin-right: 3.2vw;
   }
   .home-practice h2 {
-    font-size: 8.5333333333vw;
     margin-bottom: 8vw;
   }
   .home-practice--link {
-    padding-top: 6.4vw;
-  }
-  .home-practice--link a {
-    font-size: 3.7333333333vw;
+    padding-top: 5.8666666667vw;
   }
   .home-practice__item::before {
     background-size: 27.2vw auto;

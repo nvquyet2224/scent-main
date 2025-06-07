@@ -167,9 +167,11 @@
                     >li {
                         .list-menu__item {
                             color: #0C230B;
+
                             .header__active-menu-item {
                                 color: #0C230B;
                             }
+
                             &::before {
                                 background-color: #0C230B;
                             }
@@ -177,6 +179,7 @@
                     }
                 }
             }
+
             &__icon--account,
             &__icon--search,
             &__icon--cart {
@@ -186,6 +189,7 @@
             .disclosure {
                 &__button {
                     color: #0C230B;
+
                     span {
                         color: #0C230B;
                     }
@@ -221,7 +225,60 @@
 
 }
 
-@media screen and (max-width: 989px) {}
+@media screen and (max-width: 989px) {
+    .header {
+        &__heading-logo-wrapper {
+            width: 4rem;
+        }
+
+        &__icon--cart {
+            &::before {
+                content: '';
+                position: absolute;
+                right: clamp(-4px, f.remSp(-8), f.remSp(-8));
+                top: f.remSp(6);
+                display: block;
+                width: clamp(8px, f.remSp(8), f.remSp(8));
+                height: clamp(8px, f.remSp(8), f.remSp(8));
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background-color: #EB5757;
+                border: 1px solid #fff;
+            }
+
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+
+    .scrolled-past-header {
+        .header {
+            &__heading-logo-wrapper {
+                width: 3.2rem !important;
+                color: #0C230B;
+            }
+
+            &-wrapper {
+                background-color: #fff;
+            }
+
+            &__icon--menu,
+            &__icon--account,
+            &__icon--search,
+            &__icon--cart {
+                color: #0C230B;
+            }
+
+            &__icon--cart {
+                &::before {
+                    border-color: #0C230B;
+                }
+            }
+        }
+    }
+}
 
 //shopify-section shopify-section-group-header-group section-header shopify-section-header-sticky
 //shopify-section shopify-section-group-header-group section-header shopify-section-header-sticky scrolled-past-header

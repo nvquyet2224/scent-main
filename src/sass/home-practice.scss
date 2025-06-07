@@ -167,16 +167,11 @@
             }
 
             h2 {
-                font-size: f.remSp(32);
                 margin-bottom: f.remSp(30);
             }
 
             &--link {
-                padding-top: f.remSp(24);
-
-                a {
-                    font-size: f.remSp(14);
-                }
+                padding-top: f.remSp(22);
             }
 
             &__item {

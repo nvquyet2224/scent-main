@@ -33,12 +33,9 @@
         &--txt {
             flex: 0 0 35.555555556%;
             max-width: 35.555555556%;
-            padding: f.rem(80) f.rem(40);
+            padding: f.rem(80) f.rem(40) 0 f.rem(40);
 
             h2 {
-                // font-size: f.rem(44);
-                // line-height: 1.2;
-                // color: #0C230B;
                 padding-right: f.rem(100);
                 margin-bottom: f.rem(25);
             }
@@ -72,18 +69,11 @@
             &--txt {
                 padding: f.remSp(40) 5.333333333%;
                 h2{
-                    font-size: f.remSp(32);
                     margin-bottom: f.remSp(30);
-                }
-                p{
-                    font-size: f.remSp(16);
                 }
             }
             &--link {
-                padding-top: f.remSp(24);
-                a {
-                    font-size: f.remSp(14);
-                }
+                padding-top: f.remSp(22);
             }
         }
        

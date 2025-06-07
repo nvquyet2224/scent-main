@@ -36,11 +36,11 @@
         }
 
         &--caption {
-           width: 100%;
+            width: 100%;
         }
 
         &--content {
-            width: 100%;
+            width: f.rem(522);
         }
 
         &--link {
@@ -96,44 +96,35 @@
     .home {
         &-about {
             padding: f.remSp(60) 5.333333333%;
+
             &--container {
                 max-width: 100%;
             }
-            &--caption {
-                // font-size: f.remSp(14);   
-                // margin-bottom: f.remSp(30);
-                // padding-bottom: f.remSp(16);
-            }
+
             h2 {
-                // font-size: f.remSp(32);
-                // padding: 0;
-                // margin-bottom: f.remSp(30);
+                padding: 0;
+                margin-bottom: f.remSp(30);
             }
+
             &--sub,
             &--main {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
+
             &--video {
                 display: none;
             }
+
             &--content {
-                //font-size: f.remSp(16);
-                p {
-                    //margin-top: 0;
-                    //margin-bottom: f.remSp(18);
-                }
-                
+                width: 100%;
             }
+
             &--link {
-                // padding-top: f.remSp(24);
-                // margin-bottom: f.remSp(42);
-    
-                // a {
-                //     font-size: f.remSp(14);
-                // }
+                padding-top: f.remSp(22);
+                padding-bottom: f.remSp(42);
             }
-    
+
         }
     }
 }

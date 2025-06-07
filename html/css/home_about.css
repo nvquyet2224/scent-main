@@ -30,7 +30,7 @@
   width: 100%;
 }
 .home-about--content {
-  width: 100%;
+  width: 36.25vw;
 }
 .home-about--link {
   padding-top: 2.0833333333vw;
@@ -77,11 +77,22 @@
   .home-about--container {
     max-width: 100%;
   }
+  .home-about h2 {
+    padding: 0;
+    margin-bottom: 8vw;
+  }
   .home-about--sub, .home-about--main {
     flex: 0 0 100%;
     max-width: 100%;
   }
   .home-about--video {
     display: none;
+  }
+  .home-about--content {
+    width: 100%;
+  }
+  .home-about--link {
+    padding-top: 5.8666666667vw;
+    padding-bottom: 11.2vw;
   }
 }

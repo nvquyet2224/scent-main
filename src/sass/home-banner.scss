@@ -140,7 +140,7 @@
             &--sub {
                 padding: 0 5.333333333%;
                 padding-top: f.remSp(40);
-                padding-bottom: f.remSp(26);
+                padding-bottom: f.remSp(28);
             }
 
             &--slogan {
@@ -150,19 +150,25 @@
 
                 &__item {
                     font-size: f.remSp(40);
-                    letter-spacing: -0.8vw;
+                    letter-spacing: -0.08em;
                     &:nth-child(1) {
-                        padding-left: f.remSp(5);
-                        column-gap: f.remSp(15);
+                        gap: f.remSp(20);
+                        -webkit-transform: translateX(f.rem(4));
+                        transform: translateX(f.rem(4));
                     }
-
+                    &:nth-child(3) {
+                        gap: f.remSp(26);
+                        transform: translateX(0);
+                    }
                     &--icon {
                         flex: 0 0 f.remSp(20);
                         max-width: f.remSp(20);
+                        top:f.remSp(10);
                     }
 
                     span {
                         font-size: f.remSp(10);
+                        top:f.remSp(8);
                     }
                 }
 

@@ -80,19 +80,10 @@
   .home-popular--container {
     max-width: 100%;
   }
-  .home-popular--caption {
-    font-size: 3.7333333333vw;
-    margin-bottom: 8vw;
-    padding-bottom: 4.2666666667vw;
-  }
-  .home-popular h2 {
-    font-size: 8.5333333333vw;
-  }
-  .home-popular--link a {
-    font-size: 3.7333333333vw;
-  }
   .home-popular--header {
     margin-bottom: 8vw;
+    flex-wrap: wrap;
+    gap: 5.3333333333vw;
   }
   .home-popular--list {
     display: grid !important;

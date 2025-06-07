@@ -20,6 +20,7 @@
 
         h2 {
             margin-bottom: f.rem(12);
+            padding-right: f.rem(100);
         }
         .dot-link {
             padding-top: f.rem(30);
@@ -69,13 +70,9 @@
 
     .home {
         &-fragrance {
-            &--caption {
-                // font-size: f.remSp(14);   
-                // margin-bottom: f.remSp(30);
-                // padding-bottom: f.remSp(16);
-            }
             h2 {
-                //font-size: f.remSp(32);
+                padding-right: 0;
+                margin-bottom: f.remSp(30);
             }
             &--box {
                 width: 100%;
@@ -83,20 +80,8 @@
                 left: 0;
                 bottom: f.remSp(40);
             }
-            &--content {
-                // font-size: f.remSp(16);
-                // p {
-                //     margin-top: 0;
-                //     margin-bottom: f.remSp(18);
-                // }
-                
-            }
             &--link {
-                // padding-top: f.remSp(24);
-    
-                // a {
-                //     font-size: f.remSp(14);
-                // }
+                padding-top: f.remSp(22);
             }
             &--video {
                 &::before {

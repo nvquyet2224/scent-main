@@ -234,6 +234,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: f.rem(26);
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -290,6 +291,10 @@
         }
 
         &--date {
+            .form__field {
+                margin-bottom: 0;
+            }
+
             gap: f.rem(22);
         }
     }
@@ -344,6 +349,12 @@
     &__field {
         width: 100%;
 
+        &.open {
+            .sl__box {
+                display: block;
+            }
+        }
+
         &--time {
             .sl__header {
                 border-bottom: 1px solid rgba(0, 0, 0, 0.4);
@@ -368,6 +379,7 @@
         width: 100%;
         height: clamp(36px, f.rem(36), f.rem(36));
         color: #000;
+        cursor: pointer;
 
         #imgCountry {
             width: f.rem(16);
@@ -430,6 +442,7 @@
             justify-content: center;
             height: f.rem(46);
             cursor: pointer;
+            cursor: pointer;
 
             &:not(:last-child) {
                 border-bottom: 1px solid #E0E0E0;
@@ -443,11 +456,6 @@
         }
     }
 
-    &.open {
-        .select__box {
-            display: block;
-        }
-    }
 }
 
 .booking {
@@ -486,9 +494,15 @@
                 order: 3;
                 padding: f.remSp(42) 5.333333333%;
 
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: f.remSp(14);
+                    }
+                }
+
                 a {
                     font-size: f.remSp(14);
-                    gap: 12px;
+                    gap: f.remSp(12);
                 }
             }
 
@@ -518,6 +532,22 @@
             .company-col,
             .slogan-col {
                 font-size: f.remSp(14);
+            }
+
+            .company-col {
+                li {
+                    position: relative;
+                    padding-left: f.remSp(6);
+                    gap: f.remSp(12);
+
+                    &:not(:last-child) {
+                        margin-bottom: f.remSp(8);
+                    }
+
+                    &::before {
+                        top: f.remSp(8);
+                    }
+                }
             }
 
             .company-col {
@@ -581,9 +611,102 @@
                     li {
                         width: 100%;
                         margin: 0 !important;
+
+                        &:not(:last-child) {
+                            margin-bottom: f.remSp(14);
+                        }
+
+                        a {
+                            gap: f.remSp(12);
+                        }
                     }
                 }
             }
         }
     }
+
+    .form {
+        &__field {
+            margin-bottom: f.remSp(26);
+        }
+
+        &__caption {
+            font-size: f.remSp(12);
+        }
+
+        &__input {
+            font-size: f.remSp(16);
+        }
+
+        &__group {
+
+            &--phone {
+                gap: f.remSp(20);
+            }
+
+            &--date {
+                gap: f.remSp(20);
+            }
+        }
+
+        &__error {
+            font-size: f.remSp(12);
+        }
+
+        &__submit {
+            height: clamp(52px, f.remSp(52), f.remSp(52));
+            font-size: f.remSp(14);
+
+            span {
+                gap: f.remSp(8);
+            }
+        }
+    }
+
+
+
+    .sl {
+
+        &__header {
+            height: clamp(36px, f.remSp(36), f.remSp(36));
+            font-size: f.remSp(16);
+            gap: f.remSp(8);
+
+            #imgCountry {
+                width: f.remSp(16);
+                height: auto;
+            }
+
+        }
+
+
+        &__icon {
+            flex: 0 0 clamp(10px, f.remSp(10), f.remSp(10));
+            max-width: clamp(10px, f.remSp(10), f.remSp(10));
+            height: clamp(10px, f.remSp(10), f.remSp(10));
+        }
+
+        &__box {
+            -webkit-border-radius: clamp(6px, f.remSp(6), f.remSp(6));
+            border-radius: clamp(6px, f.remSp(6), f.remSp(6));
+
+            li {
+                height: f.remSp(46);
+                font-size: f.remSp(14);
+
+                &.selected {}
+            }
+        }
+
+    }
+
+    .booking {
+        .title {
+            font-size: f.remSp(32);
+            margin-bottom: f.remSp(36);
+            padding-right: f.remSp(100);
+        }
+    }
+
+
 }

@@ -188,20 +188,11 @@
             &--container {
                 max-width: 100%;
             }
-
-            &--caption {
-                width: f.remSp(335);
-                margin: 0 auto;
-                font-size: f.remSp(14);
-                margin-bottom: f.remSp(30);
-                padding-bottom: f.remSp(16);
-            }
-
+            &--caption,
             h2 {
                 width: f.remSp(335);
                 margin: 0 auto;
-                font-size: f.remSp(32);
-                margin-bottom: f.remSp(40);
+                margin-bottom: f.remSp(30);
             }
 
             &--sub,
@@ -215,6 +206,7 @@
             }
 
             &--item {
+                border-left: none;
                 &:nth-child(1) {
                     border-top: 1px solid rgba(0, 0, 0, 0.5);
                 }

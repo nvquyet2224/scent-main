@@ -110,7 +110,7 @@
   .home-banner--sub {
     padding: 0 5.333333333%;
     padding-top: 10.6666666667vw;
-    padding-bottom: 6.9333333333vw;
+    padding-bottom: 7.4666666667vw;
   }
   .home-banner--slogan {
     width: 100%;
@@ -119,17 +119,24 @@
   }
   .home-banner--slogan__item {
     font-size: 10.6666666667vw;
-    letter-spacing: -0.8vw;
+    letter-spacing: -0.08em;
   }
   .home-banner--slogan__item:nth-child(1) {
-    padding-left: 1.3333333333vw;
-    column-gap: 4vw;
+    gap: 5.3333333333vw;
+    -webkit-transform: translateX(0.2777777778vw);
+    transform: translateX(0.2777777778vw);
+  }
+  .home-banner--slogan__item:nth-child(3) {
+    gap: 6.9333333333vw;
+    transform: translateX(0);
   }
   .home-banner--slogan__item--icon {
     flex: 0 0 5.3333333333vw;
     max-width: 5.3333333333vw;
+    top: 2.6666666667vw;
   }
   .home-banner--slogan__item span {
     font-size: 2.6666666667vw;
+    top: 2.1333333333vw;
   }
 }

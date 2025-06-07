@@ -140,29 +140,10 @@
                 max-width: 100%;
             }
 
-            &--caption {
-                font-size: f.remSp(14);
-                margin-bottom: f.remSp(30);
-                padding-bottom: f.remSp(16);
-            }
-
             &--header {
                 flex-wrap: wrap;
-            }
-
-            h2 {
-                font-size: f.remSp(32);
-                padding: 0;
+                gap: f.remSp(20);
                 margin-bottom: f.remSp(30);
-            }
-
-            &--link {
-                padding-top: 0;
-                margin-bottom: f.remSp(42);
-
-                a {
-                    font-size: f.remSp(14);
-                }
             }
 
             &--box {
@@ -185,6 +166,7 @@
                 &--txt {
                     flex: 0 0 63.28358209%;
                     max-width: 63.28358209%;
+                    padding-left: f.remSp(15);
 
                     h3 {
                         font-size: f.remSp(20);

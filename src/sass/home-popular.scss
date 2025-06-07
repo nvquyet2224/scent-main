@@ -106,25 +106,10 @@
                 max-width: 100%;
             }
 
-            &--caption {
-                font-size: f.remSp(14);
-                margin-bottom: f.remSp(30);
-                padding-bottom: f.remSp(16);
-            }
-
-            h2 {
-                font-size: f.remSp(32);
-            }
-
-            &--link {
-
-                a {
-                    font-size: f.remSp(14);
-                }
-            }
-
             &--header {
                 margin-bottom: f.remSp(30);
+                flex-wrap: wrap;
+                gap: f.remSp(20);
             }
 
             &--list {

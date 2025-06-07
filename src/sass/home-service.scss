@@ -158,25 +158,6 @@
         }
 
 
-        h2 {
-            // font-size: f.rem(44);
-            // line-height: 1.2;
-            // color: #0C230B;
-            // padding-right: f.rem(100);
-            // margin-top: 0;
-        }
-
-        &--caption {
-            // display: block;
-            // font-size: f.rem(14);
-            // border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-            // margin-bottom: f.rem(36);
-            // padding-bottom: f.rem(22);
-            // color: #151C0A;
-            // line-height: 1.4;
-        }
-
-
     }
 }
 
@@ -184,21 +165,16 @@
 @media screen and (max-width: 989px) {
     .home {
         &-service {
-            //padding: f.remSp(60) 5.333333333%;
+            padding: f.remSp(60) 5.333333333%;
 
             &--container {
                 max-width: 100%;
             }
 
-            // &--caption {
-            //     font-size: f.remSp(14);
-            //     margin-bottom: f.remSp(30);
-            //     padding-bottom: f.remSp(16);
-            // }
-
-            // h2 {
-            //     font-size: f.remSp(32);
-            // }
+            h2 {
+                margin-bottom: f.remSp(30);
+                padding: 0;
+            }
 
             &--sub,
             &--main {
@@ -208,12 +184,7 @@
 
             &--main {
                 &__content {
-                    // font-size: f.remSp(16);
-
-                    // p {
-                    //     margin-top: 0;
-                    //     margin-bottom: f.remSp(18);
-                    // }
+                    width: 100%;
                 }
             }
 
@@ -231,15 +202,16 @@
                 margin-top: 0 !important;
 
                 &__content {
-                    // h3 {
-                    //     font-size: f.remSp(24);
-                    //     margin-bottom: f.remSp(20);
-                    // }
+                    h3 {
+                        font-size: f.remSp(24);
+                        margin-bottom: f.remSp(8);
+                    }
 
-                    // p {
-                    //     font-size: f.remSp(14);
-                    // }
-                    // padding-bottom: f.remSp(10);
+                    p {
+                        font-size: f.remSp(14);
+                    }
+
+                    padding-bottom: f.remSp(10);
                 }
 
                 &__action {
@@ -258,12 +230,13 @@
                 }
 
                 &__link {
-                    // opacity: 1;
-                    // font-size: f.remSp(14);
-                    // gap: f.remSp(12);
-                    // img {
-                    //     width: f.remSp(44);
-                    // }
+                    opacity: 1;
+                    font-size: f.remSp(14);
+                    gap: f.remSp(12);
+
+                    img {
+                        width: f.remSp(44);
+                    }
                 }
             }
         }

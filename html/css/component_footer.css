@@ -239,6 +239,9 @@
 .form__group--date {
   gap: 1.5277777778vw;
 }
+.form__group--date .form__field {
+  margin-bottom: 0;
+}
 .form__error {
   display: none;
   font-family: "Helvetica Neue";
@@ -284,6 +287,9 @@
 .sl__field {
   width: 100%;
 }
+.sl__field.open .sl__box {
+  display: block;
+}
 .sl__field--time .sl__header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -301,6 +307,7 @@
   width: 100%;
   height: clamp(36px, 2.5vw, 2.5vw);
   color: #000;
+  cursor: pointer;
 }
 .sl__header #imgCountry {
   width: 1.1111111111vw;
@@ -355,6 +362,7 @@
   justify-content: center;
   height: 3.1944444444vw;
   cursor: pointer;
+  cursor: pointer;
   margin-bottom: 1px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -362,10 +370,6 @@
 .sl__box li:not(:last-child) {
   border-bottom: 1px solid #E0E0E0;
 }
-.sl.open .select__box {
-  display: block;
-}
-
 .booking .title {
   font-size: 2.2222222222vw;
   margin-bottom: 2.5vw;
@@ -394,9 +398,12 @@
     order: 3;
     padding: 11.2vw 5.333333333%;
   }
+  .section-footer--top__menu li:not(:last-child) {
+    margin-bottom: 3.7333333333vw;
+  }
   .section-footer--top__menu a {
     font-size: 3.7333333333vw;
-    gap: 12px;
+    gap: 3.2vw;
   }
   .section-footer--top__form {
     flex: 0 0 100%;
@@ -420,6 +427,17 @@
   .section-footer--mid .company-col,
   .section-footer--mid .slogan-col {
     font-size: 3.7333333333vw;
+  }
+  .section-footer--mid .company-col li {
+    position: relative;
+    padding-left: 1.6vw;
+    gap: 3.2vw;
+  }
+  .section-footer--mid .company-col li:not(:last-child) {
+    margin-bottom: 2.1333333333vw;
+  }
+  .section-footer--mid .company-col li::before {
+    top: 2.1333333333vw;
   }
   .section-footer--mid .company-col {
     padding-top: 9.6vw;
@@ -469,5 +487,63 @@
   .section-footer--bot .privacy-col ul li {
     width: 100%;
     margin: 0 !important;
+  }
+  .section-footer--bot .privacy-col ul li:not(:last-child) {
+    margin-bottom: 3.7333333333vw;
+  }
+  .section-footer--bot .privacy-col ul li a {
+    gap: 3.2vw;
+  }
+  .form__field {
+    margin-bottom: 6.9333333333vw;
+  }
+  .form__caption {
+    font-size: 3.2vw;
+  }
+  .form__input {
+    font-size: 4.2666666667vw;
+  }
+  .form__group--phone {
+    gap: 5.3333333333vw;
+  }
+  .form__group--date {
+    gap: 5.3333333333vw;
+  }
+  .form__error {
+    font-size: 3.2vw;
+  }
+  .form__submit {
+    height: clamp(52px, 13.8666666667vw, 13.8666666667vw);
+    font-size: 3.7333333333vw;
+  }
+  .form__submit span {
+    gap: 2.1333333333vw;
+  }
+  .sl__header {
+    height: clamp(36px, 9.6vw, 9.6vw);
+    font-size: 4.2666666667vw;
+    gap: 2.1333333333vw;
+  }
+  .sl__header #imgCountry {
+    width: 4.2666666667vw;
+    height: auto;
+  }
+  .sl__icon {
+    flex: 0 0 clamp(10px, 2.6666666667vw, 2.6666666667vw);
+    max-width: clamp(10px, 2.6666666667vw, 2.6666666667vw);
+    height: clamp(10px, 2.6666666667vw, 2.6666666667vw);
+  }
+  .sl__box {
+    -webkit-border-radius: clamp(6px, 1.6vw, 1.6vw);
+    border-radius: clamp(6px, 1.6vw, 1.6vw);
+  }
+  .sl__box li {
+    height: 12.2666666667vw;
+    font-size: 3.7333333333vw;
+  }
+  .booking .title {
+    font-size: 8.5333333333vw;
+    margin-bottom: 9.6vw;
+    padding-right: 26.6666666667vw;
   }
 }

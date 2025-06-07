@@ -140,18 +140,11 @@
   .home-infrastructure--container {
     max-width: 100%;
   }
-  .home-infrastructure--caption {
-    width: 89.3333333333vw;
-    margin: 0 auto;
-    font-size: 3.7333333333vw;
-    margin-bottom: 8vw;
-    padding-bottom: 4.2666666667vw;
-  }
+  .home-infrastructure--caption,
   .home-infrastructure h2 {
     width: 89.3333333333vw;
     margin: 0 auto;
-    font-size: 8.5333333333vw;
-    margin-bottom: 10.6666666667vw;
+    margin-bottom: 8vw;
   }
   .home-infrastructure--sub, .home-infrastructure--main {
     flex: 0 0 100%;
@@ -161,6 +154,7 @@
     display: none;
   }
   .home-infrastructure--item {
+    border-left: none;
     border-right: none;
     padding-top: 17.3333333333vw;
     padding-bottom: 9.0666666667vw;

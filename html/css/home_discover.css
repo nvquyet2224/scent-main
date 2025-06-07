@@ -23,7 +23,7 @@
 .home-discover--txt {
   flex: 0 0 35.555555556%;
   max-width: 35.555555556%;
-  padding: 5.5555555556vw 2.7777777778vw;
+  padding: 5.5555555556vw 2.7777777778vw 0 2.7777777778vw;
 }
 .home-discover--txt h2 {
   padding-right: 6.9444444444vw;
@@ -49,16 +49,9 @@
     padding: 10.6666666667vw 5.333333333%;
   }
   .home-discover--txt h2 {
-    font-size: 8.5333333333vw;
     margin-bottom: 8vw;
   }
-  .home-discover--txt p {
-    font-size: 4.2666666667vw;
-  }
   .home-discover--link {
-    padding-top: 6.4vw;
-  }
-  .home-discover--link a {
-    font-size: 3.7333333333vw;
+    padding-top: 5.8666666667vw;
   }
 }

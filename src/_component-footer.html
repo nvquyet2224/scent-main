@@ -1,6 +1,7 @@
 <section class="shopify-section section-footer">
     <div class="section-footer--banner">
-        <img src="images/form-banner.jpg" alt="banner" />
+        <img class="pc" src="images/form-banner.jpg" alt="banner" />
+        <img class="sp" src="images/form-banner-sp.jpg" alt="banner" />
     </div>
     <div class="section-footer--container">
         <div class="section-footer--top">
@@ -45,7 +46,7 @@
                         <div class="form__field">
                             <label for="phone">Điện thoại</label>
                             <div class="form__group form__group--phone">
-                                <div class="sl__field" id="countrySelect">
+                                <div class="sl__field sl__field--country">
                                     <div class="sl__header">
                                         <img id="imgCountry" src="https://cdn.shopify.com/static/images/flags/vn.svg" alt="Vietnam" />
                                         <span id="nameCountry">VN</span>
@@ -109,7 +110,7 @@
 
                         <div class="form__field">
                             <label for="email">Khung giờ</label>
-                            <div class="sl__field sl__field--time default" id="timeSelect">
+                            <div class="sl__field sl__field--time default">
                                 <div class="sl__header">
                                     <span id="timeSelect">Chọn khung giờ bạn muốn</span>
                                     <span class="sl__icon">
@@ -120,9 +121,9 @@
                                 </div>
                                 <div class="sl__box">
                                     <ul>
-                                        <li data-time="10h-12h">10h-12h sáng</li>
-                                        <li data-time="2h-4h">2h-4h chiều</li>
-                                        <li data-time="6h-8h">6h-8h tối</li>
+                                        <li data-time="10h-12h sáng">10h-12h sáng</li>
+                                        <li data-time="2h-4h chiều">2h-4h chiều</li>
+                                        <li data-time="6h-8h tối">6h-8h tối</li>
                                     </ul>
                                 </div>
                             </div>
@@ -180,3 +181,38 @@
         </div>
     </div>
 </section>
+
+
+<script>
+    window.addEventListener('load', () => {
+        $(document).on('click', '.sl__header', function(){
+            var parent = $(this).parent();
+            if(parent.hasClass('open')) {
+                parent.removeClass('open');
+            }else {
+                parent.addClass('open');
+            }
+        });
+        $(document).on('click', '.sl__box li', function(){
+            const parent = $(this).closest('.sl__field');
+            if(parent.hasClass('sl__field--country')) {
+                const flag = $(this).attr('data-flag');
+                const phone = $(this).attr('data-phone');
+                const country = $(this).attr('data-country');
+                $('#imgCountry').attr('src', flag);
+                $('#nameCountry').text(country);
+                $('#phone').val(phone);
+            } else if(parent.hasClass('sl__field--time')) {
+                const time = $(this).attr('data-time');
+                $('#timeSelect').text(time);
+            }
+            if($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            } else {
+                $(this).addClass('selected');
+            }
+            parent.removeClass('open');
+            parent.removeClass('default');
+        });
+    });
+</script>
