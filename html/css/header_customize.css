@@ -25,6 +25,7 @@
   }
   .header__heading-logo-wrapper {
     width: 3.8194444444vw;
+    color: #fff;
   }
   .header__heading-logo-wrapper img {
     width: 100%;
@@ -121,6 +122,10 @@
   }
   .scrolled-past-header .header-wrapper {
     background-color: #fff;
+  }
+  .scrolled-past-header .header__heading-logo-wrapper {
+    width: 2.6388888889vw !important;
+    color: #0C230B;
   }
   .scrolled-past-header .header__inline-menu .list-menu--inline > li .list-menu__item {
     color: #0C230B;

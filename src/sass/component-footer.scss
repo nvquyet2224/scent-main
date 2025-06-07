@@ -82,11 +82,10 @@
         &__form {
             flex: 0 0 f.rem(522);
             max-width: f.rem(522);
-            //max-width: 500px;
             margin-left: auto;
             background-color: #fff;
             padding: f.rem(46) f.rem(38);
-            margin-top: -400px;
+            margin-top: f.rem(-400);
         }
     }
 
@@ -167,6 +166,8 @@
         border-top: 1px solid #fff;
         padding-top: f.rem(36);
         padding-bottom: f.rem(90);
+        //padding-left: f.rem(80);
+        //padding-right: f.rem(80);
 
         .gov-col {
             flex: 0 0 f.rem(174);
@@ -226,32 +227,234 @@
 
 }
 
-.booking {
-    .title {
-        font-size: f.rem(32);
+
+.form {
+    &__field {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: f.rem(26);
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
-    .form__input {
-        appearance: none;
-        -webkit-appearance: none;
-        background-color: #fff;
+
+    &__caption {
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        color: #000;
+        display: block;
+        font-size: f.rem(12);
+    }
+
+    &__input {
+        display: block;
         width: 100%;
-        height: f.rem(38);
-        border: none;
-        box-shadow: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        height: clamp(36px, f.rem(36), f.rem(36));
         font-family: 'Helvetica Neue';
         font-weight: 400;
         color: #000;
         font-size: f.rem(16);
+        appearance: none;
+        -webkit-appearance: none;
+        background-color: #fff;
+        border: none;
+        padding: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        box-shadow: none;
         outline: none;
-
 
         &::placeholder {
             color: #BEBEBE;
         }
+    }
+
+    &__group {
+        display: flex;
+        width: 100%;
+
+        &--phone {
+            gap: f.rem(22);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+            .sl__field {
+                width: auto;
+            }
+
+            input {
+                display: inline-flex;
+                flex-grow: 1;
+                border: none;
+                width: auto;
+            }
+        }
+
+        &--date {
+            gap: f.rem(22);
+        }
+    }
+
+    &__error {
+        display: none;
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        color: #E02229;
+        font-size: f.rem(12);
+    }
+
+    &__submit {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #141C0A;
+        color: #fff;
+        height: clamp(52px, f.rem(52), f.rem(52));
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        font-family: 'Helvetica Neue';
+        font-weight: 500;
+        font-size: f.rem(14);
+
+        span {
+            position: relative;
+            line-height: 1.428571429;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: f.rem(8);
+
+            &::before {
+                content: '';
+                display: block;
+                width: 5px;
+                height: 5px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+
+.sl {
+    position: relative;
+
+    &__field {
+        width: 100%;
+
+        &--time {
+            .sl__header {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        &.default {
+            .sl__header {
+                color: #BEBEBE;
+            }
+        }
+    }
+
+    &__header {
+        display: inline-flex;
+        align-items: center;
+        gap: f.rem(8);
+        font-size: f.rem(16);
+        font-family: 'Helvetica Neue';
+        font-weight: 400;
+        cursor: pointer;
+        width: 100%;
+        height: clamp(36px, f.rem(36), f.rem(36));
+        color: #000;
+
+        #imgCountry {
+            width: f.rem(16);
+            height: auto;
+        }
+
+        #nameCountry {
+            display: block;
+        }
 
     }
 
+
+    &__icon {
+        display: flex;
+        flex: 0 0 clamp(10px, f.rem(10), f.rem(10));
+        max-width: clamp(10px, f.rem(10), f.rem(10));
+        height: clamp(10px, f.rem(10), f.rem(10));
+        color: #000;
+        margin-left: auto;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        -webkit-transform: translateY(7px);
+        transform: translateY(7px);
+        display: none;
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 4px 12px 0px #00000012;
+        -webkit-border-radius: clamp(6px, f.rem(6), f.rem(6));
+        border-radius: clamp(6px, f.rem(6), f.rem(6));
+        background-color: #fff;
+        z-index: 2;
+
+        ul {
+            max-height: 320px;
+            overflow: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
+
+        li {
+            position: relative;
+            font-family: 'Helvetica Neue';
+            font-weight: 400;
+            text-align: center;
+            font-size: f.rem(16);
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: f.rem(46);
+            cursor: pointer;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #E0E0E0;
+            }
+
+            margin-bottom: 1px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+            &.selected {}
+        }
+    }
+
+    &.open {
+        .select__box {
+            display: block;
+        }
+    }
+}
+
+.booking {
+    .title {
+        font-size: f.rem(32);
+        margin-bottom: f.rem(36);
+    }
 }
 
 
