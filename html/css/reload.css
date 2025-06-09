@@ -42,6 +42,13 @@
 }
 @font-face {
   font-family: "Petrona";
+  src: url(../fonts/Petrona-SemiBold.woff2) format("woff2"), url(../fonts/Petrona-SemiBold.woff) format("woff"), url(../fonts/Petrona-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Petrona";
   src: url(../fonts/Petrona-LightItalic.woff2) format("woff2"), url(../fonts/Petrona-LightItalic.woff) format("woff"), url(../fonts/Petrona-LightItalic.ttf) format("truetype");
   font-weight: 300;
   font-style: italic;

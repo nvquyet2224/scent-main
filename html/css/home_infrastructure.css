@@ -52,6 +52,18 @@
   display: flex;
   flex-direction: column;
 }
+.home-infrastructure--sub--img {
+  position: relative;
+  display: block;
+  width: 21.1805555556vw;
+  height: auto;
+  margin-top: auto;
+  line-height: 0;
+}
+.home-infrastructure--sub--img img {
+  width: 100%;
+  height: auto;
+}
 .home-infrastructure--main {
   flex: 0 0 66.171875%;
   max-width: 66.171875%;
@@ -149,6 +161,9 @@
   .home-infrastructure--sub, .home-infrastructure--main {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .home-infrastructure--sub--img {
+    display: none;
   }
   .home-infrastructure--video {
     display: none;

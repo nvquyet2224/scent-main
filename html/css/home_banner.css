@@ -35,12 +35,12 @@
   text-transform: uppercase;
   line-height: 1.1;
   display: flex;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.3125vw;
 }
 .home-banner--slogan__item:nth-child(1) {
-  -webkit-transform: translateX(6.8055555556vw);
-  transform: translateX(6.8055555556vw);
-  column-gap: 2.0833333333vw;
+  -webkit-transform: translateX(6.5277777778vw);
+  transform: translateX(6.5277777778vw);
+  column-gap: 1.3888888889vw;
 }
 .home-banner--slogan__item:nth-child(3) {
   column-gap: 2.0833333333vw;

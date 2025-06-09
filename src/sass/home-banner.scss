@@ -43,12 +43,13 @@
                 text-transform: uppercase;
                 line-height: 1.1;
                 display: flex;
-                letter-spacing: -0.05em;
+                //letter-spacing: -0.05em;
+                letter-spacing: -0.3125vw;
 
                 &:nth-child(1) {
-                    -webkit-transform: translateX(f.rem(98));
-                    transform: translateX(f.rem(98));
-                    column-gap: f.rem(30);
+                    -webkit-transform: translateX(f.rem(94));
+                    transform: translateX(f.rem(94));
+                    column-gap: f.rem(20);
                 }
 
                 &:nth-child(3) {
