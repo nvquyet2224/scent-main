@@ -127,6 +127,7 @@
   font-size: 1.9444444444vw;
   margin-top: 0;
   margin-bottom: 1.6666666667vw;
+  letter-spacing: -0.05vw;
 }
 .home-infrastructure--item__content p {
   font-family: "Helvetica Neue";
@@ -135,6 +136,7 @@
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.6;
   margin: 0;
+  letter-spacing: 0;
 }
 .home-infrastructure--item__icon {
   width: 6.9444444444vw;

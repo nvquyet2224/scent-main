@@ -67,6 +67,7 @@
   line-height: 1.4;
   margin: 0;
   margin-bottom: 0.2777777778vw;
+  letter-spacing: -0.05vw;
 }
 .home-service--item__content p {
   font-family: "Helvetica Neue";
@@ -75,6 +76,7 @@
   font-size: 0.9722222222vw;
   line-height: 1.6;
   margin: 0;
+  letter-spacing: 0;
 }
 .home-service--item__action {
   position: relative;

@@ -164,6 +164,7 @@
                     font-size: f.rem(28);
                     margin-top: 0;
                     margin-bottom: f.rem(24);
+                    letter-spacing: -0.05vw;
                 }
 
                 p {
@@ -173,6 +174,7 @@
                     color: rgba(0, 0, 0, 0.6);
                     line-height: 1.6;
                     margin: 0;
+                    letter-spacing: 0;
                 }
             }
 

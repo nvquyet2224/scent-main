@@ -82,6 +82,7 @@ body {
   color: #0C230B;
   font-size: 3.0555555556vw;
   margin: 0;
+  letter-spacing: -0.173611111vw;
 }
 
 .content.color-white {
@@ -94,6 +95,7 @@ body {
   margin: 0;
   font-size: 1.3888888889vw;
   margin-bottom: 0.9722222222vw;
+  letter-spacing: 0;
 }
 
 .dot-link {

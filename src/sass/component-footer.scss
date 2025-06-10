@@ -238,20 +238,22 @@
         &:last-child {
             margin-bottom: 0;
         }
-    }
 
-    &__caption {
-        font-family: 'Helvetica Neue';
-        font-weight: 400;
-        color: #000;
-        display: block;
-        font-size: f.rem(12);
+        label {
+            font-family: 'Helvetica Neue';
+            font-weight: 400;
+            color: #000;
+            font-size: f.rem(12);
+            letter-spacing: 0;
+            display: block;
+            margin-bottom: 0;
+        }
     }
 
     &__input {
         display: block;
         width: 100%;
-        height: clamp(36px, f.rem(36), f.rem(36));
+        height: clamp(33px, f.rem(33), f.rem(33));
         font-family: 'Helvetica Neue';
         font-weight: 400;
         color: #000;
@@ -277,6 +279,7 @@
         &--phone {
             gap: f.rem(22);
             border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+            overflow: hidden;
 
             .sl__field {
                 width: auto;
@@ -377,7 +380,7 @@
         font-weight: 400;
         cursor: pointer;
         width: 100%;
-        height: clamp(36px, f.rem(36), f.rem(36));
+        height: clamp(33px, f.rem(33), f.rem(33));
         color: #000;
         cursor: pointer;
 
@@ -387,7 +390,11 @@
         }
 
         #nameCountry {
-            display: block;
+            display: inline-flex;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 160px;
         }
 
     }
@@ -423,7 +430,7 @@
         z-index: 2;
 
         ul {
-            max-height: 320px;
+            max-height: 260px;
             overflow: hidden;
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
@@ -453,6 +460,32 @@
             transition: all 0.3s ease-in-out;
 
             &.selected {}
+        }
+    }
+
+    &__field--country {
+        .sl__header {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                right: f.rem(-11);
+                top: 20%;
+                width: 1px;
+                height: 60%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0.4;
+            }
+        }
+
+        .sl__box {
+            width: 60%;
+
+            li {
+                text-align: left;
+                justify-content: flex-start;
+                padding: 0 f.rem(20);
+            }
         }
     }
 
@@ -628,6 +661,10 @@
     .form {
         &__field {
             margin-bottom: f.remSp(26);
+
+            label {
+                font-size: f.remSp(12);
+            }
         }
 
         &__caption {
@@ -636,12 +673,13 @@
 
         &__input {
             font-size: f.remSp(16);
+            height: clamp(33px, f.remSp(33), f.remSp(33));
         }
 
         &__group {
 
             &--phone {
-                gap: f.remSp(20);
+                gap: f.remSp(30);
             }
 
             &--date {
@@ -668,7 +706,7 @@
     .sl {
 
         &__header {
-            height: clamp(36px, f.remSp(36), f.remSp(36));
+            height: clamp(33px, f.remSp(33), f.remSp(33));
             font-size: f.remSp(16);
             gap: f.remSp(8);
 
@@ -695,6 +733,19 @@
                 font-size: f.remSp(14);
 
                 &.selected {}
+            }
+        }
+
+        &__field--country {
+            .sl__header {
+                &::after {
+                    right: f.remSp(-15);
+                }
+            }
+            .sl__box {
+                li {
+                    padding: 0 f.remSp(20);
+                }
             }
         }
 
