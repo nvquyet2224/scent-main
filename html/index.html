@@ -34,6 +34,17 @@
     <meta name="twitter:description"
         content="Khám phá các loại tinh dầu tự nhiên phù hợp cho sản xuất nước hoa, thơm phòng, trị liệu và các sản phẩm cao cấp khác.">
 
+        <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Slick Slider JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
     <script src="//scent.vn/cdn/shop/t/5/assets/constants.js?v=58251544750838685771714063312" defer></script>
     <script src="//scent.vn/cdn/shop/t/5/assets/pubsub.js?v=158357773527763999511714063313" defer></script>
     <script src="//scent.vn/cdn/shop/t/5/assets/global.js?v=107723039011231360651726789201" defer></script>
@@ -15099,8 +15110,38 @@
                 const video = document.getElementById('Video-template--24353244184855__home_fragrance_RkFrYzzzz');
                 video.play();
             }
+
+
+            gsap.registerPlugin(ScrollTrigger);
+
+            ScrollTrigger.create({
+                trigger: ".home-fragrance--container",
+                animation: gsap.timeline()
+                .fromTo(
+                    ".home-fragrance--video",
+                    { scale: 0.4 },
+                    { scale: 1, transformOrigin: "center center", duration: 1 }
+                ).add(
+                    gsap.fromTo(
+                        ".home-fragrance--box",
+                        { opacity: 0 },
+                        { opacity: 1, duration: 0.5 }
+                    ),
+                    0.6 // Bắt đầu animation text tại thời điểm 60% của video scale
+                ),                start: "top top",
+                end: "bottom top",
+                scrub: 0.7,
+                pin: true,
+                onLeave: function () {
+                },
+                onEnter: function () {
+                }
+            });
         });
         console.log('video__play');
+
+       
+        
     </script>
 
     <div class="home-fragrance--container">
@@ -15473,7 +15514,7 @@
 
 
 <script>
-    window.onload = function () {
+     window.addEventListener('load', () => {
         $('.home-practice--box').slick({
             dots: true,
             infinite: false,
@@ -15493,7 +15534,7 @@
                 }
             ]
         });
-    }
+    });
 </script>
         <section class="shopify-section home-new">
     <div class="home-new--container">
@@ -15748,6 +15789,9 @@
                                         </span>
                                     </div>
                                     <div class="sl__box">
+                                        <div class="sl__box--search">
+                                            <input type="text" class="form__input" placeholder="Nhập từ khóa"/>
+                                        </div>
                                         <ul>
                                             <li class="selected" data-phone="+84" data-country="Vietnam" data-flag="https://cdn.shopify.com/static/images/flags/vn.svg">
                                                 <span>Vietnam +84</span>
@@ -15965,18 +16009,7 @@
         src="//scent.vn/cdn/shop/t/5/assets/chaty.js?v=43298506754854041001744126069&id=jP9cvXRT&shop=scent-vn.myshopify.com"></script>
     <style> </style>
 
-
-
-
-
-        <!-- Slick Slider CSS -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
-        <!-- Slick Slider JavaScript -->
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
+    
 
 </body>
 

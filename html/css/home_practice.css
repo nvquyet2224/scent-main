@@ -13,9 +13,7 @@
 }
 .home-practice--box {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.3888888889vw;
+  display: block;
 }
 .home-practice h2 {
   margin-bottom: 2.7777777778vw;
@@ -76,6 +74,9 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .home-practice .slick-dots {
+    display: none !important;
+  }
   .home-practice--img img {
     -webkit-transition: filter 0.3s ease-in-out;
     transition: filter 0.3s ease-in-out;
@@ -96,11 +97,14 @@
   }
 }
 @media screen and (min-width: 990px) {
+  .home-practice .slick-list {
+    width: calc(100% + 2.0833333333vw);
+  }
   .home-practice .slick-track {
-    width: calc(100% + 2.7777777778vw) !important;
-    display: flex !important;
-    column-gap: 1.3888888889vw;
-    margin: 0 -1.3888888889vw;
+    width: 100%;
+  }
+  .home-practice .slick-track .home-practice__item {
+    margin-right: 1.3888888889vw;
   }
 }
 @media screen and (max-width: 989px) {

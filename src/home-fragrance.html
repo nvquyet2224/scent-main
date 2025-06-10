@@ -5,8 +5,38 @@
                 const video = document.getElementById('Video-template--24353244184855__home_fragrance_RkFrYzzzz');
                 video.play();
             }
+
+
+            gsap.registerPlugin(ScrollTrigger);
+
+            ScrollTrigger.create({
+                trigger: ".home-fragrance--container",
+                animation: gsap.timeline()
+                .fromTo(
+                    ".home-fragrance--video",
+                    { scale: 0.4 },
+                    { scale: 1, transformOrigin: "center center", duration: 1 }
+                ).add(
+                    gsap.fromTo(
+                        ".home-fragrance--box",
+                        { opacity: 0 },
+                        { opacity: 1, duration: 0.5 }
+                    ),
+                    0.6 // Bắt đầu animation text tại thời điểm 60% của video scale
+                ),                start: "top top",
+                end: "bottom top",
+                scrub: 0.7,
+                pin: true,
+                onLeave: function () {
+                },
+                onEnter: function () {
+                }
+            });
         });
         console.log('video__play');
+
+       
+        
     </script>
 
     <div class="home-fragrance--container">

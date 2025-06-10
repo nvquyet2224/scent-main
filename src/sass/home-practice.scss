@@ -19,9 +19,10 @@
 
         &--box {
             width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: f.rem(20);
+            display: block;
+            //display: grid;
+            //grid-template-columns: repeat(3, 1fr);
+            //gap: f.rem(20);
         }
 
 
@@ -100,6 +101,9 @@
 @media screen and (min-width: 1025px) {
     .home {
         &-practice {
+            .slick-dots {
+                display: none !important;
+            }
             &--img {
                 img {
                     -webkit-transition: filter 0.3s ease-in-out;
@@ -134,11 +138,16 @@
 @media screen and (min-width: 990px) {
     .home {
         &-practice {
+            .slick-list {
+                width: calc(100% + f.rem(30));
+            }
             .slick-track {
-                width: calc(100% + f.rem(40)) !important;
-                display: flex !important;
-                column-gap: f.rem(20);
-                margin: 0 f.rem(-20);
+                width: 100%;
+            }
+            .slick-track {
+                .home-practice__item {
+                    margin-right: f.rem(20);
+                }
             }
         }
     }
