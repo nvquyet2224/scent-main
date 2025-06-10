@@ -39,9 +39,6 @@
   .header__inline-menu .list-menu--inline > li {
     margin-right: 3.6111111111vw;
   }
-  .header__inline-menu .list-menu--inline > li:last-child {
-    margin-right: 1.8055555556vw;
-  }
   .header__inline-menu .list-menu--inline > li summary.list-menu__item {
     padding-right: 1.25vw;
   }
