@@ -87,7 +87,7 @@
                 display: grid !important;
                 width: 100% !important;
             }
-            .slick-initialized .slick-slide {
+            .slick-initialized .slick-slide:last-child {
                 margin-bottom: 0 !important;
             }
             .slick-track {
