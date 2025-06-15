@@ -512,6 +512,7 @@
     .title {
         font-size: clamp(14px, f.rem(32), 40px);
         margin-bottom: clamp(10px, f.rem(36), 40px);
+        letter-spacing: -2px;
     }
 }
 

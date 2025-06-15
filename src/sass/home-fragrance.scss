@@ -110,6 +110,10 @@
                 bottom: f.remSp(40);
             }
 
+            &--detail {
+                width: 100%;
+            }
+
             &--link {
                 padding-top: clamp(10px, f.rem(30), 27px);
             }

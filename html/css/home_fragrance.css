@@ -80,6 +80,9 @@
     left: 0;
     bottom: 10.6666666667vw;
   }
+  .home-fragrance--detail {
+    width: 100%;
+  }
   .home-fragrance--link {
     padding-top: clamp(10px, 2.0833333333vw, 27px);
   }

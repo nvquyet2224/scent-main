@@ -418,6 +418,7 @@
 .booking .title {
   font-size: clamp(14px, 2.2222222222vw, 40px);
   margin-bottom: clamp(10px, 2.5vw, 40px);
+  letter-spacing: -2px;
 }
 
 @media screen and (max-width: 989px) {
