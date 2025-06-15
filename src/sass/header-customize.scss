@@ -20,20 +20,18 @@
 
 @media screen and (min-width: 1024px) {
     sticky-header {
-        padding-top: f.rem(12);
-        padding-bottom: f.rem(12);
+        padding-top: clamp(10px, f.rem(12), 20px);
+        padding-bottom: clamp(10px, f.rem(12), 20px);
     }
-    // .localization-form__select .icon-caret,
-    // summary .icon-caret {
-    //     width: f.rem(8);
-    // }
+
     .header {
         width: 100%;
         max-width: 100%;
 
         &:not(.drawer-menu).page-width {
-            padding-left: f.rem(80);
-            padding-right: f.rem(80);
+            padding-left: 0;
+            padding-right: 0;
+            max-width: clamp(900px, f.rem(1280), 1577px);
         }
 
         &__heading-link {
@@ -42,7 +40,7 @@
         }
 
         &__heading-logo-wrapper {
-            width: f.rem(55);
+            width: clamp(30px, f.rem(55), 51px);
             color: #fff;
 
             img {
@@ -55,21 +53,19 @@
             .list-menu--inline {
 
                 >li {
-                    margin-right: f.rem(52);
+                    margin-right: clamp(20px, f.rem(52), 46px);
 
-                    // &:last-child {
-                    //     margin-right: f.rem(26);
-                    // }
+                    &:last-child {
+                        margin-right: clamp(20px, f.rem(26), 23px)
+                    }
 
                     summary.list-menu__item {
-                        padding-right: f.rem(18);
+                        padding-right: clamp(18px, f.rem(18), 18px);
                     }
 
                     .list-menu__item {
                         padding: 0;
-                        //padding-right: f.rem(18);
-
-                        font-size: f.rem(14);
+                        font-size: clamp(10px, f.rem(14), 16px);
                         font-family: 'Helvetica Neue';
                         font-weight: 500;
                         position: relative;
@@ -105,15 +101,15 @@
                 gap: f.rem(8);
 
                 img {
-                    flex: 0 0 f.rem(20);
-                    max-width: f.rem(20);
-                    height: f.rem(20);
+                    flex: clamp(12px, f.rem(240), 20px);
+                    max-width: clamp(12px, f.rem(240), 20px);
+                    height: clamp(12px, f.rem(240), 20px);
                     -webkit-border-radius: 50%;
                     border-radius: 50%;
                 }
 
                 span {
-                    font-size: f.rem(14);
+                    font-size: clamp(10px, f.rem(14), 14px);
                     font-family: 'Helvetica Neue';
                     font-weight: 500;
                     color: #fff;
@@ -126,8 +122,8 @@
         }
 
         &__icon {
-            width: f.rem(24);
-            height: f.rem(24);
+            width: clamp(12px, f.rem(24), 20px);
+            height: clamp(12px, f.rem(24), 20px);
         }
 
         localization-form {
@@ -144,13 +140,17 @@
                 right: clamp(-5px, f.rem(-10), f.rem(-10));
                 top: 0;
                 display: block;
-                width: clamp(10px, f.rem(10), f.rem(10));
-                height: clamp(10px, f.rem(10), f.rem(10));
+                width: clamp(10px, f.rem(10), 8px);
+                height: clamp(10px, f.rem(10), 8px);
                 -webkit-border-radius: 50%;
                 border-radius: 50%;
                 background-color: #EB5757;
                 border: 2px solid #fff;
             }
+        }
+
+        .localization-form__select .icon-caret {
+            top: calc(50% - .3rem);
         }
 
         .h_spr {
@@ -179,7 +179,7 @@
 
         .header {
             &__heading-logo-wrapper {
-                width: f.rem(38) !important;
+                width: clamp(20px, f.rem(38), 40px) !important;
                 color: #0C230B;
             }
 
@@ -230,21 +230,7 @@
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .header {
-
-        &__inline-menu {
-            .list-menu--inline {
-                >li {
-                    //margin-right: f.rem(40);
-                }
-            }
-        }
-
-
-    }
-
-}
+@media screen and (max-width: 1400px) {}
 
 @media screen and (max-width: 989px) {
     .header {

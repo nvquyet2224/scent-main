@@ -36,7 +36,7 @@
             padding: f.rem(80) f.rem(40) 0 f.rem(40);
 
             h2 {
-                padding-right: f.rem(100);
+                padding-right: f.rem(140);
                 margin-bottom: f.rem(25);
             }
 
@@ -47,7 +47,7 @@
         }
 
         &--link {
-            padding-top: f.rem(28);
+            padding-top: clamp(10px, f.rem(30), 27px);
         }
 
 

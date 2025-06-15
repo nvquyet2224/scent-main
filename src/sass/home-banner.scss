@@ -21,11 +21,15 @@
             max-width: 50%;
         }
 
+        &--main {
+            position: relative;
+        }
+
         &--sub {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding-bottom: f.rem(84);
+            padding-bottom: clamp(f.rem(84), 8.854166666666667vw, 170px);
         }
 
         &--slogan {
@@ -33,21 +37,21 @@
             z-index: 1;
             width: f.rem(785);
             color: #fff;
+
             -webkit-transform: translateX(f.rem(78));
             transform: translateX(f.rem(78));
 
             &__item {
                 font-family: 'Petrona';
-                font-size: f.rem(90);
+                font-size: clamp(40px, f.rem(90), 104px);
                 font-weight: 500;
                 text-transform: uppercase;
                 line-height: 1.1;
                 display: flex;
-                //letter-spacing: -0.05em;
                 letter-spacing: -0.3125vw;
 
                 &:nth-child(1) {
-                    -webkit-transform: translateX(f.rem(94));
+                    -webkit-transform: translateX(f.rem(94));   
                     transform: translateX(f.rem(94));
                     column-gap: f.rem(20);
                 }
@@ -60,9 +64,10 @@
 
                 &--icon {
                     position: relative;
-                    top:f.rem(22);
-                    flex: 0 0 f.rem(31);
-                    max-width: f.rem(31);
+                    top:clamp(0px, f.rem(22), 18px);
+                    flex: 0 0 clamp(10px, f.rem(31), 31px);
+                    max-width: clamp(10px, f.rem(31), 31px);
+                    align-self: flex-start;
                     height: auto;
                     line-height: 0;
 
@@ -76,7 +81,7 @@
                     font-family: 'Helvetica Neue';
                     font-weight: 400;
                     line-height: 1.4;
-                    font-size: f.rem(12);
+                    font-size: clamp(4px, f.rem(12), 12px);
                     letter-spacing: normal;
                     position: relative;
                     top: f.rem(16);
@@ -127,6 +132,20 @@
     }
 }
 
+@media screen and (min-width: 1920px) {
+    .home {
+        &-banner {
+             &--slogan {
+                -webkit-transform: translateX(clamp(100px, 8.854166666666667vw, 169px));
+                transform: translateX(clamp(100px, 8.854166666666667vw, 169px));
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 989px) {
+
+}
 
 @media screen and (max-width: 989px) {
     .home {

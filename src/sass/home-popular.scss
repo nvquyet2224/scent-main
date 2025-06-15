@@ -5,7 +5,7 @@
 
     &-popular {
         width: 100%;
-        padding: f.rem(114) 0;
+        padding: clamp(40px, f.rem(114), 160px) 0;
         background-color: #F3F0EB;
         overflow: hidden;
         position: relative;
@@ -13,7 +13,7 @@
         &--container {
             position: relative;
             width: 100%;
-            max-width: f.rem(1280);
+            max-width: clamp(900px, f.rem(1280), 1577px);
             margin: 0 auto;
         }
 
@@ -27,7 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: f.rem(44);
+            margin-bottom: clamp(20px, f.rem(44), 50px);
         }
 
         &--link {
@@ -52,8 +52,8 @@
             &__content {
                 h3 {
                     color: #0C230B;
-                    font-size: f.rem(20);
-                    line-height: 1.6;
+                    font-size: clamp(12px, f.rem(20), 24px);
+                    line-height: 1.3;
                     text-align: center;
                     font-weight: 600;
                     margin: 0;
@@ -65,7 +65,7 @@
                 line-height: 0;
                 width: auto;
                 height: auto;
-                max-width: f.rem(147);
+                max-width: clamp(100px, f.rem(147), 147px);
                 margin: 0 auto;
                 margin-bottom: f.rem(10);
 
@@ -87,7 +87,9 @@
                 display: grid !important;
                 width: 100% !important;
             }
-
+            .slick-initialized .slick-slide {
+                margin-bottom: 0 !important;
+            }
             .slick-track {
                 -webkit-transform: none !important;
                 transform: none !important;

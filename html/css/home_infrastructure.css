@@ -1,12 +1,12 @@
 .home-infrastructure {
   width: 100%;
-  padding: 7.9166666667vw 0;
+  padding: clamp(40px, 7.9166666667vw, 160px) 0;
   background-color: #DBE0DF;
 }
 .home-infrastructure--container {
   position: relative;
   width: 100%;
-  max-width: 88.8888888889vw;
+  max-width: clamp(900px, 88.8888888889vw, 1577px);
   margin: 0 auto;
 }
 .home-infrastructure--box {
@@ -15,7 +15,7 @@
   flex-wrap: wrap;
 }
 .home-infrastructure h2 {
-  margin-top: 2.0833333333vw;
+  margin-top: clamp(16px, 3.1944444444vw, 46px);
   padding-right: 6.9444444444vw;
 }
 .home-infrastructure--caption {
@@ -55,7 +55,7 @@
 .home-infrastructure--sub--img {
   position: relative;
   display: block;
-  width: 21.1805555556vw;
+  width: clamp(150px, 21.1805555556vw, 406px);
   height: auto;
   margin-top: auto;
   line-height: 0;
@@ -78,7 +78,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 4.1666666667vw 5.5555555556vw;
+  padding: clamp(20px, 4.1666666667vw, 60px) clamp(30px, 5.5555555556vw, 96px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   border-left: 1px solid rgba(0, 0, 0, 0.5);
   border-right: 1px solid rgba(0, 0, 0, 0.5);
@@ -89,12 +89,12 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 3.4722222222vw;
-  height: 3.4722222222vw;
+  width: clamp(20px, 3.4722222222vw, 50px);
+  height: clamp(20px, 3.4722222222vw, 50px);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25vw;
+  font-size: clamp(10px, 1.25vw, 18px);
   font-weight: 300;
   font-style: italic;
   font-family: "Petrona";
@@ -124,22 +124,22 @@
 .home-infrastructure--item__content h3 {
   font-family: "Petrona";
   font-weight: 400;
-  font-size: 1.9444444444vw;
+  font-size: clamp(13px, 1.9444444444vw, 32px);
   margin-top: 0;
-  margin-bottom: 1.6666666667vw;
+  margin-bottom: clamp(10px, 1.6666666667vw, 26px);
   letter-spacing: -0.05vw;
 }
 .home-infrastructure--item__content p {
   font-family: "Helvetica Neue";
   font-weight: 400;
-  font-size: 1.1111111111vw;
+  font-size: clamp(10px, 1.1111111111vw, 18px);
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.6;
   margin: 0;
   letter-spacing: 0;
 }
 .home-infrastructure--item__icon {
-  width: 6.9444444444vw;
+  width: clamp(40px, 6.9444444444vw, 100px);
   line-height: 0;
 }
 .home-infrastructure--item__icon img {

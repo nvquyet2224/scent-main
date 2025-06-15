@@ -29,7 +29,7 @@
 
     &--container {
         width: 100%;
-        max-width: f.rem(1280);
+        max-width: clamp(900px, f.rem(1280), 1577px);
         margin: 0 auto;
     }
 
@@ -39,11 +39,11 @@
         padding-bottom: f.rem(85);
 
         &__logo {
-            flex: 0 0 f.rem(88);
-            max-width: f.rem(88);
+            flex: 0 0 clamp(40px, f.rem(88), 84px);
+            max-width: clamp(40px, f.rem(88), 84px);
             height: auto;
             line-height: 0;
-            margin-right: f.rem(340);
+            margin-right: clamp(100px, f.rem(340), 436px);
 
             img {
                 width: 100%;
@@ -54,12 +54,12 @@
         &__menu {
             li {
                 &:not(:last-child) {
-                    margin-bottom: f.rem(20);
+                    margin-bottom: clamp(10px, f.rem(20), 18px);
                 }
             }
 
             a {
-                font-size: f.rem(14);
+                font-size: clamp(10px, f.rem(14), 16px);
                 display: inline-flex;
                 align-items: center;
                 gap: f.rem(8);
@@ -80,12 +80,12 @@
         }
 
         &__form {
-            flex: 0 0 f.rem(522);
-            max-width: f.rem(522);
+            flex: 0 0 clamp(300px, f.rem(522), 646px);
+            max-width: clamp(300px, f.rem(522), 646px);
             margin-left: auto;
             background-color: #fff;
-            padding: f.rem(46) f.rem(38);
-            margin-top: f.rem(-400);
+            padding: clamp(14px, f.rem(46), 56px) clamp(10px, f.rem(38), 44px);
+            margin-top: clamp(-440px, f.rem(-400), -100px);
         }
     }
 
@@ -97,15 +97,15 @@
 
         .company-col,
         .slogan-col {
-            flex: 0 0 f.rem(305);
-            max-width: f.rem(305);
-            font-size: f.rem(14);
+            flex: 0 0 clamp(150px, f.rem(305), 379px);
+            max-width: clamp(150px, f.rem(305), 379px);
+            font-size: clamp(10px, f.rem(14), 16px);
             font-family: 'Helvetica Neue';
             font-weight: 400;
         }
 
         .company-col {
-            margin-right: f.rem(120);
+            margin-right: clamp(40px, f.rem(120), 130px);
 
             li {
                 display: flex;
@@ -133,8 +133,8 @@
         }
 
         .company-name {
-            font-size: f.rem(20);
-            margin-bottom: f.rem(20);
+            font-size: clamp(10px, f.rem(20), 24px);
+            margin-bottom: clamp(10px, f.rem(20), 18px);
         }
 
         .company-slogan {
@@ -145,7 +145,7 @@
         }
 
         .company-contact {
-            font-size: f.rem(20);
+            font-size: clamp(10px, f.rem(20), 24px);
             margin-top: auto;
         }
 
@@ -153,7 +153,7 @@
             margin-left: auto;
             display: flex;
             flex-direction: column;
-            font-size: f.rem(16);
+            font-size: clamp(10px, f.rem(16), 16px);
             font-family: 'Helvetica Neue';
             font-weight: 400;
             text-align: right;
@@ -166,12 +166,10 @@
         border-top: 1px solid #fff;
         padding-top: f.rem(36);
         padding-bottom: f.rem(90);
-        //padding-left: f.rem(80);
-        //padding-right: f.rem(80);
 
         .gov-col {
-            flex: 0 0 f.rem(174);
-            max-width: f.rem(174);
+            flex: 0 0 clamp(70px, f.rem(174), 174px);
+            max-width: clamp(70px, f.rem(174), 174px);
             margin-right: f.rem(250);
             line-height: 0;
 
@@ -190,11 +188,11 @@
             ul {
                 display: flex;
                 align-items: center;
-                font-size: f.rem(12);
+                font-size: clamp(8px, f.rem(12), 14px);
 
                 li {
                     &:not(:last-child) {
-                        margin-right: f.rem(90);
+                        margin-right: clamp(30px, f.rem(90), 86px);
                     }
 
                 }
@@ -243,21 +241,21 @@
             font-family: 'Helvetica Neue';
             font-weight: 400;
             color: #000;
-            font-size: f.rem(12);
+            font-size: clamp(8px, f.rem(12), 14px);
             letter-spacing: 0;
             display: block;
-            margin-bottom: 0;
+            margin-bottom: 6px;
         }
     }
 
     &__input {
         display: block;
         width: 100%;
-        height: clamp(33px, f.rem(33), f.rem(33));
+        height: clamp(22px, f.rem(33), 28px);
         font-family: 'Helvetica Neue';
         font-weight: 400;
         color: #000;
-        font-size: f.rem(16);
+        font-size: clamp(10px, f.rem(16), 18px);
         appearance: none;
         -webkit-appearance: none;
         background-color: #fff;
@@ -317,12 +315,13 @@
         justify-content: center;
         background-color: #141C0A;
         color: #fff;
-        height: clamp(52px, f.rem(52), f.rem(52));
+        height: clamp(52px, f.rem(52), 52px);
         -webkit-border-radius: 60px;
         border-radius: 60px;
         font-family: 'Helvetica Neue';
         font-weight: 500;
-        font-size: f.rem(14);
+        font-size: clamp(10px, f.rem(14), 18px);
+        margin-bottom: 0;
 
         span {
             position: relative;
@@ -375,17 +374,18 @@
         display: inline-flex;
         align-items: center;
         gap: f.rem(8);
-        font-size: f.rem(16);
+        font-size: clamp(10px, 1.1111111111vw, 18px);
         font-family: 'Helvetica Neue';
         font-weight: 400;
         cursor: pointer;
         width: 100%;
-        height: clamp(33px, f.rem(33), f.rem(33));
+        height: clamp(22px, f.rem(33), 28px);
+        padding-bottom: 6px;
         color: #000;
         cursor: pointer;
 
         #imgCountry {
-            width: f.rem(16);
+            width: clamp(8px, f.rem(16), 16px);
             height: auto;
         }
 
@@ -442,12 +442,12 @@
             font-family: 'Helvetica Neue';
             font-weight: 400;
             text-align: center;
-            font-size: f.rem(16);
+            font-size: clamp(12px, f.rem(16), 16px);
             color: #000;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: f.rem(46);
+            height: clamp(30px, f.rem(46), 44px);
             cursor: pointer;
             cursor: pointer;
 
@@ -466,11 +466,12 @@
     &__field--country {
         .sl__header {
             position: relative;
+
             &::after {
                 content: '';
                 position: absolute;
                 right: f.rem(-11);
-                top: 20%;
+                top: 10%;
                 width: 1px;
                 height: 60%;
                 background-color: rgba(0, 0, 0, 0.4);
@@ -480,14 +481,18 @@
 
         .sl__box {
             width: 60%;
+
             .sl__box--search {
                 width: 100%;
                 height: 100%;
                 padding: f.rem(5) f.rem(20);
+
                 .form__input {
                     width: 100%;
-                    border: 1px solid rgba(0,0,0,0.5);
+                    border: 1px solid rgba(0, 0, 0, 0.5);
                     -webkit-border-radius: 8px;
+                    height: clamp(30px, f.rem(40), 40px);
+                    font-size: clamp(12px, f.rem(16), 16px);
                     border-radius: 8px;
                     padding: 0 15px;
                 }
@@ -505,8 +510,8 @@
 
 .booking {
     .title {
-        font-size: f.rem(32);
-        margin-bottom: f.rem(36);
+        font-size: clamp(14px, f.rem(32), 40px);
+        margin-bottom: clamp(10px, f.rem(36), 40px);
     }
 }
 
@@ -731,9 +736,9 @@
 
 
         &__icon {
-            flex: 0 0 clamp(10px, f.remSp(10), f.remSp(10));
-            max-width: clamp(10px, f.remSp(10), f.remSp(10));
-            height: clamp(10px, f.remSp(10), f.remSp(10));
+            flex: 0 0 clamp(10px, f.remSp(10), 10px);
+            max-width: clamp(10px, f.remSp(10), 10px);
+            height: clamp(10px, f.remSp(10), 10px);
         }
 
         &__box {
@@ -754,6 +759,7 @@
                     right: f.remSp(-15);
                 }
             }
+
             .sl__box {
                 li {
                     padding: 0 f.remSp(20);
@@ -762,6 +768,7 @@
 
             .sl__box {
                 width: 80%;
+
                 .sl__box--search {
                     padding: f.remSp(5) f.remSp(20);
                 }

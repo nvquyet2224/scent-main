@@ -6,25 +6,21 @@
     &-practice {
         width: 100%;
         background-color: #F3F0EB;
-        padding: f.rem(88) 0;
+        padding: clamp(30px, f.rem(88), 120px) 0;
         overflow: hidden;
         position: relative;
 
         &--container {
             position: relative;
             width: 100%;
-            max-width: f.rem(1280);
+            max-width: clamp(900px, f.rem(1280), 1577px);
             margin: 0 auto;
         }
 
         &--box {
             width: 100%;
             display: block;
-            //display: grid;
-            //grid-template-columns: repeat(3, 1fr);
-            //gap: f.rem(20);
         }
-
 
         h2 {
             margin-bottom: f.rem(40);
@@ -51,7 +47,7 @@
                 background-image: url(../images/tree.png);
                 background-position: right bottom;
                 background-repeat: no-repeat;
-                background-size: f.rem(151) auto;
+                background-size: clamp(100px, f.rem(151), 189px) auto;
                 pointer-events: none;
                 opacity: 0.3;
             }
@@ -71,10 +67,14 @@
 
         &--txt {
             position: relative;
-            padding: f.rem(30) f.rem(26) f.rem(38) f.rem(26);
+            padding-top: clamp(12px, f.rem(30), 35px);
+            padding-bottom: clamp(6px, f.rem(38), 46px);
+            padding-left: clamp(10px, f.rem(26), 27px);
+            padding-right: clamp(10px, f.rem(26), 27px);
+
 
             h3 {
-                font-size: f.rem(28);
+                font-size: clamp(14px, f.rem(28), 32px);
                 font-family: 'Petrona';
                 font-weight: 500;
                 line-height: 1.4;

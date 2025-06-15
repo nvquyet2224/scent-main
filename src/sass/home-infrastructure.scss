@@ -5,13 +5,13 @@
 
     &-infrastructure {
         width: 100%;
-        padding: f.rem(114) 0;
+        padding: clamp(40px, f.rem(114), 160px) 0;
         background-color: #DBE0DF;
 
         &--container {
             position: relative;
             width: 100%;
-            max-width: f.rem(1280);
+            max-width: clamp(900px, f.rem(1280), 1577px);
             margin: 0 auto;
         }
 
@@ -22,7 +22,7 @@
         }
 
         h2 {
-            margin-top: f.rem(30);
+            margin-top: clamp(16px, f.rem(46), 46px);
             padding-right: f.rem(100);
         }
 
@@ -67,7 +67,7 @@
             &--img {
                  position: relative;
                 display: block;
-                width: f.rem(305);
+                width: clamp(150px, f.rem(305), 406px);
                 height: auto;
                 margin-top: auto;
                 line-height: 0;
@@ -94,7 +94,7 @@
             position: relative;
             display: flex;
             align-items: center;
-            padding: f.rem(60) f.rem(80);
+            padding: clamp(20px, f.rem(60), 60px) clamp(30px, f.rem(80), 96px);
             border-bottom: 1px solid rgba(0, 0, 0, 0.5);
             border-left: 1px solid rgba(0, 0, 0, 0.5);
             border-right: 1px solid rgba(0, 0, 0, 0.5);
@@ -105,12 +105,12 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                width: f.rem(50);
-                height: f.rem(50);
+                width: clamp(20px, f.rem(50), 50px);
+                height: clamp(20px, f.rem(50), 50px);
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: f.rem(18);
+                font-size: clamp(10px, f.rem(18), 18px);
                 font-weight: 300;
                 font-style: italic;
                 font-family: 'Petrona';
@@ -161,16 +161,16 @@
                 h3 {
                     font-family: 'Petrona';
                     font-weight: 400;
-                    font-size: f.rem(28);
+                    font-size: clamp(13px, f.rem(28), 32px);
                     margin-top: 0;
-                    margin-bottom: f.rem(24);
+                    margin-bottom: clamp(10px, f.rem(24), 26px);
                     letter-spacing: -0.05vw;
                 }
 
                 p {
                     font-family: 'Helvetica Neue';
                     font-weight: 400;
-                    font-size: f.rem(16);
+                    font-size: clamp(10px, f.rem(16), 18px);
                     color: rgba(0, 0, 0, 0.6);
                     line-height: 1.6;
                     margin: 0;
@@ -179,7 +179,7 @@
             }
 
             &__icon {
-                width: f.rem(100);
+                width: clamp(40px, f.rem(100), 100px);
                 line-height: 0;
 
                 img {

@@ -1,12 +1,12 @@
 .home-service {
   width: 100%;
   background-color: #F3F0EB;
-  padding: 7.9166666667vw 0;
+  padding: clamp(40px, 7.9166666667vw, 160px) 0;
 }
 .home-service--container {
   position: relative;
   width: 100%;
-  max-width: 88.8888888889vw;
+  max-width: clamp(900px, 88.8888888889vw, 1577px);
   margin: 0 auto;
 }
 .home-service--box {
@@ -28,7 +28,7 @@
 }
 .home-service--main__content {
   width: 36.25vw;
-  padding-bottom: 4.3055555556vw;
+  padding-bottom: clamp(30px, 4.3055555556vw, 76px);
 }
 .home-service--list {
   width: 100%;
@@ -63,7 +63,7 @@
   font-family: "Petrona";
   font-weight: 400;
   color: #000;
-  font-size: 1.9444444444vw;
+  font-size: clamp(13px, 1.9444444444vw, 32px);
   line-height: 1.4;
   margin: 0;
   margin-bottom: 0.2777777778vw;
@@ -73,7 +73,7 @@
   font-family: "Helvetica Neue";
   font-weight: 400;
   color: #000;
-  font-size: 0.9722222222vw;
+  font-size: clamp(10px, 0.9722222222vw, 18px);
   line-height: 1.6;
   margin: 0;
   letter-spacing: 0;
@@ -94,7 +94,7 @@
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   line-height: 0;
-  width: 13.1944444444vw;
+  width: clamp(50px, 13.1944444444vw, 236px);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -107,7 +107,7 @@
   position: relative;
   text-decoration: none;
   color: #000;
-  font-size: 0.9722222222vw;
+  font-size: clamp(10px, 0.9722222222vw, 18px);
   font-weight: 500;
   text-transform: uppercase;
   display: inline-flex;
@@ -118,7 +118,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 .home-service--item__link img {
-  width: 3.0555555556vw;
+  width: clamp(20px, 3.0555555556vw, 52px);
   height: auto;
 }
 .home-service--item:hover .home-service--item__img {

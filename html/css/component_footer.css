@@ -22,7 +22,7 @@
 }
 .section-footer--container {
   width: 100%;
-  max-width: 88.8888888889vw;
+  max-width: clamp(900px, 88.8888888889vw, 1577px);
   margin: 0 auto;
 }
 .section-footer--top {
@@ -31,21 +31,21 @@
   padding-bottom: 5.9027777778vw;
 }
 .section-footer--top__logo {
-  flex: 0 0 6.1111111111vw;
-  max-width: 6.1111111111vw;
+  flex: 0 0 clamp(40px, 6.1111111111vw, 84px);
+  max-width: clamp(40px, 6.1111111111vw, 84px);
   height: auto;
   line-height: 0;
-  margin-right: 23.6111111111vw;
+  margin-right: clamp(100px, 23.6111111111vw, 436px);
 }
 .section-footer--top__logo img {
   width: 100%;
   height: auto;
 }
 .section-footer--top__menu li:not(:last-child) {
-  margin-bottom: 1.3888888889vw;
+  margin-bottom: clamp(10px, 1.3888888889vw, 18px);
 }
 .section-footer--top__menu a {
-  font-size: 0.9722222222vw;
+  font-size: clamp(10px, 0.9722222222vw, 16px);
   display: inline-flex;
   align-items: center;
   gap: 0.5555555556vw;
@@ -63,12 +63,12 @@
   background-color: #fff;
 }
 .section-footer--top__form {
-  flex: 0 0 36.25vw;
-  max-width: 36.25vw;
+  flex: 0 0 clamp(300px, 36.25vw, 646px);
+  max-width: clamp(300px, 36.25vw, 646px);
   margin-left: auto;
   background-color: #fff;
-  padding: 3.1944444444vw 2.6388888889vw;
-  margin-top: -27.7777777778vw;
+  padding: clamp(14px, 3.1944444444vw, 56px) clamp(10px, 2.6388888889vw, 44px);
+  margin-top: clamp(-440px, -27.7777777778vw, -100px);
 }
 .section-footer--mid {
   display: flex;
@@ -78,14 +78,14 @@
 }
 .section-footer--mid .company-col,
 .section-footer--mid .slogan-col {
-  flex: 0 0 21.1805555556vw;
-  max-width: 21.1805555556vw;
-  font-size: 0.9722222222vw;
+  flex: 0 0 clamp(150px, 21.1805555556vw, 379px);
+  max-width: clamp(150px, 21.1805555556vw, 379px);
+  font-size: clamp(10px, 0.9722222222vw, 16px);
   font-family: "Helvetica Neue";
   font-weight: 400;
 }
 .section-footer--mid .company-col {
-  margin-right: 8.3333333333vw;
+  margin-right: clamp(40px, 8.3333333333vw, 130px);
 }
 .section-footer--mid .company-col li {
   display: flex;
@@ -109,8 +109,8 @@
   background-color: #fff;
 }
 .section-footer--mid .company-name {
-  font-size: 1.3888888889vw;
-  margin-bottom: 1.3888888889vw;
+  font-size: clamp(10px, 1.3888888889vw, 24px);
+  margin-bottom: clamp(10px, 1.3888888889vw, 18px);
 }
 .section-footer--mid .company-slogan {
   height: 100%;
@@ -119,14 +119,14 @@
   line-height: 1.57;
 }
 .section-footer--mid .company-contact {
-  font-size: 1.3888888889vw;
+  font-size: clamp(10px, 1.3888888889vw, 24px);
   margin-top: auto;
 }
 .section-footer--mid .social-col {
   margin-left: auto;
   display: flex;
   flex-direction: column;
-  font-size: 1.1111111111vw;
+  font-size: clamp(10px, 1.1111111111vw, 16px);
   font-family: "Helvetica Neue";
   font-weight: 400;
   text-align: right;
@@ -139,8 +139,8 @@
   padding-bottom: 6.25vw;
 }
 .section-footer--bot .gov-col {
-  flex: 0 0 12.0833333333vw;
-  max-width: 12.0833333333vw;
+  flex: 0 0 clamp(70px, 12.0833333333vw, 174px);
+  max-width: clamp(70px, 12.0833333333vw, 174px);
   margin-right: 17.3611111111vw;
   line-height: 0;
 }
@@ -157,10 +157,10 @@
 .section-footer--bot .privacy-col ul {
   display: flex;
   align-items: center;
-  font-size: 0.8333333333vw;
+  font-size: clamp(8px, 0.8333333333vw, 14px);
 }
 .section-footer--bot .privacy-col ul li:not(:last-child) {
-  margin-right: 6.25vw;
+  margin-right: clamp(30px, 6.25vw, 86px);
 }
 .section-footer--bot .privacy-col ul a {
   text-decoration: none;
@@ -196,19 +196,19 @@
   font-family: "Helvetica Neue";
   font-weight: 400;
   color: #000;
-  font-size: 0.8333333333vw;
+  font-size: clamp(8px, 0.8333333333vw, 14px);
   letter-spacing: 0;
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 6px;
 }
 .form__input {
   display: block;
   width: 100%;
-  height: clamp(33px, 2.2916666667vw, 2.2916666667vw);
+  height: clamp(22px, 2.2916666667vw, 28px);
   font-family: "Helvetica Neue";
   font-weight: 400;
   color: #000;
-  font-size: 1.1111111111vw;
+  font-size: clamp(10px, 1.1111111111vw, 18px);
   appearance: none;
   -webkit-appearance: none;
   background-color: #fff;
@@ -259,12 +259,13 @@
   justify-content: center;
   background-color: #141C0A;
   color: #fff;
-  height: clamp(52px, 3.6111111111vw, 3.6111111111vw);
+  height: clamp(52px, 3.6111111111vw, 52px);
   -webkit-border-radius: 60px;
   border-radius: 60px;
   font-family: "Helvetica Neue";
   font-weight: 500;
-  font-size: 0.9722222222vw;
+  font-size: clamp(10px, 0.9722222222vw, 18px);
+  margin-bottom: 0;
 }
 .form__submit span {
   position: relative;
@@ -303,17 +304,18 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5555555556vw;
-  font-size: 1.1111111111vw;
+  font-size: clamp(10px, 1.1111111111vw, 18px);
   font-family: "Helvetica Neue";
   font-weight: 400;
   cursor: pointer;
   width: 100%;
-  height: clamp(33px, 2.2916666667vw, 2.2916666667vw);
+  height: clamp(22px, 2.2916666667vw, 28px);
+  padding-bottom: 6px;
   color: #000;
   cursor: pointer;
 }
 .sl__header #imgCountry {
-  width: 1.1111111111vw;
+  width: clamp(8px, 1.1111111111vw, 16px);
   height: auto;
 }
 .sl__header #nameCountry {
@@ -362,12 +364,12 @@
   font-family: "Helvetica Neue";
   font-weight: 400;
   text-align: center;
-  font-size: 1.1111111111vw;
+  font-size: clamp(12px, 1.1111111111vw, 16px);
   color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3.1944444444vw;
+  height: clamp(30px, 3.1944444444vw, 44px);
   cursor: pointer;
   cursor: pointer;
   margin-bottom: 1px;
@@ -384,7 +386,7 @@
   content: "";
   position: absolute;
   right: -0.7638888889vw;
-  top: 20%;
+  top: 10%;
   width: 1px;
   height: 60%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -402,6 +404,8 @@
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 8px;
+  height: clamp(30px, 2.7777777778vw, 40px);
+  font-size: clamp(12px, 1.1111111111vw, 16px);
   border-radius: 8px;
   padding: 0 15px;
 }
@@ -412,8 +416,8 @@
 }
 
 .booking .title {
-  font-size: 2.2222222222vw;
-  margin-bottom: 2.5vw;
+  font-size: clamp(14px, 2.2222222222vw, 40px);
+  margin-bottom: clamp(10px, 2.5vw, 40px);
 }
 
 @media screen and (max-width: 989px) {
@@ -574,9 +578,9 @@
     height: auto;
   }
   .sl__icon {
-    flex: 0 0 clamp(10px, 2.6666666667vw, 2.6666666667vw);
-    max-width: clamp(10px, 2.6666666667vw, 2.6666666667vw);
-    height: clamp(10px, 2.6666666667vw, 2.6666666667vw);
+    flex: 0 0 clamp(10px, 2.6666666667vw, 10px);
+    max-width: clamp(10px, 2.6666666667vw, 10px);
+    height: clamp(10px, 2.6666666667vw, 10px);
   }
   .sl__box {
     -webkit-border-radius: clamp(6px, 1.6vw, 1.6vw);

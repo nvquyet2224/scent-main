@@ -1,14 +1,14 @@
 .home-practice {
   width: 100%;
   background-color: #F3F0EB;
-  padding: 6.1111111111vw 0;
+  padding: clamp(30px, 6.1111111111vw, 120px) 0;
   overflow: hidden;
   position: relative;
 }
 .home-practice--container {
   position: relative;
   width: 100%;
-  max-width: 88.8888888889vw;
+  max-width: clamp(900px, 88.8888888889vw, 1577px);
   margin: 0 auto;
 }
 .home-practice--box {
@@ -37,7 +37,7 @@
   background-image: url(../images/tree.png);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 10.4861111111vw auto;
+  background-size: clamp(100px, 10.4861111111vw, 189px) auto;
   pointer-events: none;
   opacity: 0.3;
 }
@@ -52,10 +52,13 @@
 }
 .home-practice--txt {
   position: relative;
-  padding: 2.0833333333vw 1.8055555556vw 2.6388888889vw 1.8055555556vw;
+  padding-top: clamp(12px, 2.0833333333vw, 35px);
+  padding-bottom: clamp(6px, 2.6388888889vw, 46px);
+  padding-left: clamp(10px, 1.8055555556vw, 27px);
+  padding-right: clamp(10px, 1.8055555556vw, 27px);
 }
 .home-practice--txt h3 {
-  font-size: 1.9444444444vw;
+  font-size: clamp(14px, 1.9444444444vw, 32px);
   font-family: "Petrona";
   font-weight: 500;
   line-height: 1.4;

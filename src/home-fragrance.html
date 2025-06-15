@@ -6,24 +6,23 @@
                 video.play();
             }
 
-
             gsap.registerPlugin(ScrollTrigger);
 
             ScrollTrigger.create({
                 trigger: ".home-fragrance--container",
                 animation: gsap.timeline()
-                .fromTo(
-                    ".home-fragrance--video",
-                    { scale: 0.4 },
-                    { scale: 1, transformOrigin: "center center", duration: 1 }
-                ).add(
-                    gsap.fromTo(
-                        ".home-fragrance--box",
-                        { opacity: 0 },
-                        { opacity: 1, duration: 0.5 }
-                    ),
-                    0.6 // Bắt đầu animation text tại thời điểm 60% của video scale
-                ),                start: "top top",
+                    .fromTo(
+                        ".home-fragrance--video",
+                        { scale: 0.4 },
+                        { scale: 1, transformOrigin: "center center", duration: 1 }
+                    ).add(
+                        gsap.fromTo(
+                            ".home-fragrance--box",
+                            { opacity: 0 },
+                            { opacity: 1, duration: 0.5 }
+                        ),
+                        0.6
+                    ), start: "top top",
                 end: "bottom top",
                 scrub: 0.7,
                 pin: true,
@@ -33,31 +32,35 @@
                 }
             });
         });
-        console.log('video__play');
 
-       
-        
+
+
     </script>
 
     <div class="home-fragrance--container">
-          <div class="home-fragrance--video">
-                <video id="Video-template--24353244184855__home_fragrance_RkFrYzzzz" playsinline="playsinline"
-                    loop="loop" muted="muted" preload="none"
-                    poster="//scent.vn/cdn/shop/files/preview_images/da107ec1d6be41d68a9506cd16a5cf54.thumbnail.0000000000.jpg?v=1732850035&amp;width=1100">
+        <div class="home-fragrance--video">
+            <video id="Video-template--24353244184855__home_fragrance_RkFrYzzzz" playsinline="playsinline" loop="loop"
+                muted="muted" preload="none"
+                poster="//scent.vn/cdn/shop/files/preview_images/da107ec1d6be41d68a9506cd16a5cf54.thumbnail.0000000000.jpg?v=1732850035&amp;width=1100">
 
-                    <source
-                        src="//scent.vn/cdn/shop/videos/c/vp/da107ec1d6be41d68a9506cd16a5cf54/da107ec1d6be41d68a9506cd16a5cf54.SD-480p-1.5Mbps-38926561.mp4?v=0"
-                        type="video/mp4">
-                </video>
+                <source
+                    src="//scent.vn/cdn/shop/videos/c/vp/da107ec1d6be41d68a9506cd16a5cf54/da107ec1d6be41d68a9506cd16a5cf54.SD-480p-1.5Mbps-38926561.mp4?v=0"
+                    type="video/mp4">
+            </video>
         </div>
-        
+
         <div class="home-fragrance--box">
-            <h2 class="title color-white">Giọt hương nguyên bản</h2>
-            <div class="home-fragrance--content content color-white">
-                <p>Mỗi mùi hương là một thế giới thu nhỏ. <br>Hãy để chúng tôi dẫn bạn qua những cảm xúc khác nhau: thư giãn, sâu lắng, tươi sáng, hoặc bí ẩn.</p>
-            </div>
-            <div class="home-fragrance--link dot-link color-white">
-                <a href="#">Khám phá</a>
+            <div class="home-fragrance--inr">
+                <div class="home-fragrance--detail">
+                    <h2 class="title color-white">Giọt hương nguyên bản</h2>
+                    <div class="home-fragrance--content content color-white">
+                        <p>Mỗi mùi hương là một thế giới thu nhỏ. <br>Hãy để chúng tôi dẫn bạn qua những cảm xúc khác nhau: thư
+                            giãn, sâu lắng, tươi sáng, hoặc bí ẩn.</p>
+                    </div>
+                    <div class="home-fragrance--link dot-link color-white">
+                        <a href="#">Khám phá</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

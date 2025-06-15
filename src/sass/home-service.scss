@@ -6,12 +6,12 @@
     &-service {
         width: 100%;
         background-color: #F3F0EB;
-        padding: f.rem(114) 0;
+        padding: clamp(40px, f.rem(114), 160px) 0;
 
         &--container {
             position: relative;
             width: 100%;
-            max-width: f.rem(1280);
+            max-width: clamp(900px, f.rem(1280), 1577px);
             margin: 0 auto;
         }
 
@@ -37,7 +37,7 @@
 
             &__content {
                 width: f.rem(522);
-                padding-bottom: f.rem(62);
+                padding-bottom: clamp(30px, f.rem(62), 76px);
             }
         }
 
@@ -81,7 +81,7 @@
                     font-family: 'Petrona';
                     font-weight: 400;
                     color: #000;
-                    font-size: f.rem(28);
+                    font-size: clamp(13px, f.rem(28), 32px);
                     line-height: 1.4;
                     margin: 0;
                     margin-bottom: f.rem(4);
@@ -92,7 +92,7 @@
                     font-family: 'Helvetica Neue';
                     font-weight: 400;
                     color: #000;
-                    font-size: f.rem(14);
+                    font-size: clamp(10px, f.rem(14), 18px);
                     line-height: 1.6;
                     margin: 0;
                     letter-spacing: 0;
@@ -116,7 +116,7 @@
                 -webkit-transition: transform 0.3s ease-in-out;
                 transition: transform 0.3s ease-in-out;
                 line-height: 0;
-                width: f.rem(190);
+                width: clamp(50px, f.rem(190), 236px);
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
@@ -131,7 +131,7 @@
                 position: relative;
                 text-decoration: none;
                 color: #000;
-                font-size: f.rem(14);
+                font-size: clamp(10px, f.rem(14), 18px);
                 font-weight: 500;
                 text-transform: uppercase;
                 display: inline-flex;
@@ -142,7 +142,7 @@
                 transition: opacity 0.3s ease-in-out;
 
                 img {
-                    width: f.rem(44);
+                    width: clamp(20px, f.rem(44), 52px);
                     height: auto;
                 }
             }

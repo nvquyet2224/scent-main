@@ -26,7 +26,7 @@
   padding: 5.5555555556vw 2.7777777778vw 0 2.7777777778vw;
 }
 .home-discover--txt h2 {
-  padding-right: 6.9444444444vw;
+  padding-right: 9.7222222222vw;
   margin-bottom: 1.7361111111vw;
 }
 .home-discover--txt p {
@@ -34,7 +34,7 @@
   color: rgba(12, 35, 11, 0.8);
 }
 .home-discover--link {
-  padding-top: 1.9444444444vw;
+  padding-top: clamp(10px, 2.0833333333vw, 27px);
 }
 
 @media screen and (max-width: 989px) {

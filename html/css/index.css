@@ -69,9 +69,9 @@ body {
   color: #151C0A;
   line-height: 1.4;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  padding-bottom: 1.5277777778vw;
-  margin-bottom: 3.1944444444vw;
-  font-size: 0.9722222222vw;
+  padding-bottom: clamp(10px, 1.5277777778vw, 24px);
+  margin-bottom: clamp(16px, 3.1944444444vw, 46px);
+  font-size: clamp(10px, 0.9722222222vw, 16px);
   text-transform: uppercase;
 }
 
@@ -80,7 +80,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   color: #0C230B;
-  font-size: 3.0555555556vw;
+  font-size: clamp(16px, 3.0555555556vw, 52px);
   margin: 0;
   letter-spacing: -0.173611111vw;
 }
@@ -93,8 +93,8 @@ body {
   font-weight: 300;
   line-height: 1.4;
   margin: 0;
-  font-size: 1.3888888889vw;
-  margin-bottom: 0.9722222222vw;
+  font-size: clamp(12px, 1.3888888889vw, 24px);
+  margin-bottom: clamp(4px, 0.9722222222vw, 11px);
   letter-spacing: 0;
 }
 
@@ -112,7 +112,7 @@ body {
   align-items: center;
   text-decoration: none;
   gap: 0.5555555556vw;
-  font-size: 1.1111111111vw;
+  font-size: clamp(10px, 1.1111111111vw, 18px);
 }
 .dot-link a::before {
   content: "";
